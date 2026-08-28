@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    {
+      "architecture": "arm64",
+      "fileName": "agentos-2.0.0-beta.11-darwin-arm64.tar.gz",
+      "kind": "core",
+      "platform": "darwin",
+      "sha256": "975acd604297a5d7b10d431d5a95cf6b2bb64969e17a3c8c7198ec42c16d5d3d",
+      "sizeBytes": 49752986,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.11/agentos-2.0.0-beta.11-darwin-arm64.tar.gz"
+    }
+  ],
+  "channel": "beta",
+  "publishedAt": "2026-08-28T11:16:21.671Z",
+  "releaseNotes": "## AgentOS 2.0.0-beta.11\n\n- Added signed in-product update management with persistent stable/beta channel selection, download verification, installation progress, service restart, reconnect confirmation, and a safe read-only boundary for source checkouts\n- Moved all public Core installers, signed channel manifests, and AgentOS Runtime artifacts to `wutianle/agentos-releases`; the private source repository now contains source history and source tags only\n- Unified the public Runtime product name as AgentOS Runtime while preserving target-specific local and Cube asset filenames for architecture clarity\n- Added offline AgentOS Runtime import for Cube environments, including base template architecture detection, archive structure and digest validation, renamed-file support, duplicate reuse, progress reporting, and visible ready-to-save state\n- Added portable Cube target archives by rewriting Runtime store links so the verified package can be extracted outside the original build filesystem\n- Consolidated version, progress, inline status, notice, and footer treatments through shared settings components and fixed repeated control spacing\n\n### Verification\n\n- Passed the complete 264-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.11` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Assembled and checksum-verified AgentOS Runtime `1.0.0-beta.3` for local macOS arm64, Cube Linux amd64, and Cube Linux arm64 targets\n- Booted the macOS Runtime through Apple Virtualization.framework and verified the packaged Harness runtime before publishing\n- Installed the signed Core archive with the matching local Runtime in an isolated prefix, then passed version, doctor, Core health, sandbox health, signed-update API, and packaged-browser checks",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.11",
+  "schemaVersion": 1,
+  "version": "2.0.0-beta.11"
+}

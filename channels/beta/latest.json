@@ -2,18 +2,18 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.12-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.13-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "fd5aebc2da10a9d7551a13676470d5c6bf45495f0ad541e0db52a1ddc8c8a6ee",
-      "sizeBytes": 49756733,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.12/agentos-2.0.0-beta.12-darwin-arm64.tar.gz"
+      "sha256": "2927c84554ab0ad71937203d1e223f9d4dabf5097469f7134eae59b62bf48ae9",
+      "sizeBytes": 49758178,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.13/agentos-2.0.0-beta.13-darwin-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-28T12:52:10.749Z",
-  "releaseNotes": "## AgentOS 2.0.0-beta.12\n\n- Added signed offline Core upgrade import to System settings, including streamed upload, safe archive inspection, embedded manifest signature verification, platform and architecture checks, exact size and SHA-256 validation, and reuse of the existing install-and-restart flow\n- Extended the bootstrap installer with `--core`, `--runtime`, and `--offline` inputs so disconnected hosts can install from separate verified archives or one self-contained AgentOS offline bundle without network access\n- Added a release packager for target-specific offline bundles containing the signed channel manifest, matching Core archive, and optional pinned local AgentOS Runtime archive\n- Kept online signed-channel upgrades and persistent data behavior unchanged, while retaining AgentOS Runtime `1.0.0-beta.3` so this Core-only update does not republish or redownload unchanged Runtime artifacts\n\n### Verification\n\n- Passed the complete 265-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.12` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Assembled and checksum-verified the signed macOS arm64 Core archive, audited its allowlisted contents, and installed it in an isolated prefix\n- Verified online update compatibility plus valid, invalid, mismatched, and duplicate offline installer and in-product import paths",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.12",
+  "publishedAt": "2026-08-28T13:49:20.878Z",
+  "releaseNotes": "- Fixed in-product Core upgrades so the restarted service resolves its version\n  from the active installed release instead of retaining a stale version value\n  from the previous supervisor process\n- Updated the AgentOS supervisor to reload the current release manifest before\n  every managed service restart, keeping health, update status, and program\n  directory information consistent after an upgrade\n- Unified all settings progress indicators with the shared neutral system\n  palette while preserving red exclusively for failed progress states\n- Kept AgentOS Runtime `1.0.0-beta.3` unchanged so this Core-only update does\n  not republish or redownload Runtime artifacts\n\n### Verification\n\n- Passed the complete 269-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.13` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Verified the installed beta.12 service reports a consistent version and\n  program directory after a managed restart\n- Verified the updated settings progress palette on the real System settings\n  route in both light and dark themes\n- Assembled and signature-verified the macOS arm64 Core archive, packaged the\n  offline installer with unchanged AgentOS Runtime `1.0.0-beta.3`, and verified\n  a fresh beta.13 installation and System settings route in an isolated prefix",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.13",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.12"
+  "version": "2.0.0-beta.13"
 }

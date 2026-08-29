@@ -2,18 +2,36 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.13-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.14-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "2927c84554ab0ad71937203d1e223f9d4dabf5097469f7134eae59b62bf48ae9",
-      "sizeBytes": 49758178,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.13/agentos-2.0.0-beta.13-darwin-arm64.tar.gz"
+      "sha256": "ff35ab27e78b6dffa940fa7e46b3ad10be9f7fb8642533248996ffe965c5d0db",
+      "sizeBytes": 49760089,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "x64",
+      "fileName": "agentos-2.0.0-beta.14-linux-x64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "b94ba6e2cc65726283e2d9447adbeb2b85bd040dc6c4163be62f4bd1b956db52",
+      "sizeBytes": 55594231,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-linux-x64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "fileName": "agentos-2.0.0-beta.14-linux-arm64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "9a990c793da89c82086c63752aba4751377b921d4ffcfa6615b97704a866b56a",
+      "sizeBytes": 55491923,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-28T13:49:20.878Z",
-  "releaseNotes": "- Fixed in-product Core upgrades so the restarted service resolves its version\n  from the active installed release instead of retaining a stale version value\n  from the previous supervisor process\n- Updated the AgentOS supervisor to reload the current release manifest before\n  every managed service restart, keeping health, update status, and program\n  directory information consistent after an upgrade\n- Unified all settings progress indicators with the shared neutral system\n  palette while preserving red exclusively for failed progress states\n- Kept AgentOS Runtime `1.0.0-beta.3` unchanged so this Core-only update does\n  not republish or redownload Runtime artifacts\n\n### Verification\n\n- Passed the complete 269-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.13` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Verified the installed beta.12 service reports a consistent version and\n  program directory after a managed restart\n- Verified the updated settings progress palette on the real System settings\n  route in both light and dark themes\n- Assembled and signature-verified the macOS arm64 Core archive, packaged the\n  offline installer with unchanged AgentOS Runtime `1.0.0-beta.3`, and verified\n  a fresh beta.13 installation and System settings route in an isolated prefix",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.13",
+  "publishedAt": "2026-08-29T06:03:39.088Z",
+  "releaseNotes": "- Added native Linux `x64` and `arm64` Core release targets so AgentOS can be\n  installed from the same signed release stream on macOS and Linux\n- Added persistent install-level environment files through `--env-file`, with\n  validation and reuse across installation, service startup, health checks,\n  upgrades, and managed restarts\n- Added `AGENTOS_HOME`, `AGENTOS_HOST`, `AGENTOS_PORT`, and\n  `AGENTOS_MANAGE_LOCAL_SANDBOX` as the supported deployment settings, including\n  Core-only Linux installations that use Cube instead of a local sandbox\n- Added the active environment-file path to System settings without exposing\n  its stored configuration values\n- Extended offline and custom-prefix installation coverage so a Linux ARM64\n  server can install Core under `/app` without creating its data directory in\n  the account home\n\n### Verification\n\n- Passed the complete 274-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.14` SDK JAR\n- Passed the Sandbox VMM Go test suite on macOS\n- Passed focused bootstrap-installer, archive-retention, environment-file,\n  Supervisor, and System-settings regression coverage",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.14",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.13"
+  "version": "2.0.0-beta.14"
 }

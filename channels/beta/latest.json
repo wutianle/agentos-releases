@@ -2,36 +2,36 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.14-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.15-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "ff35ab27e78b6dffa940fa7e46b3ad10be9f7fb8642533248996ffe965c5d0db",
-      "sizeBytes": 49760089,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-darwin-arm64.tar.gz"
+      "sha256": "09f106afeb2adc1466930f178d2f5e450701e29f8fe6ff4a0c4524c61a38bf62",
+      "sizeBytes": 49761407,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.14-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.15-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "b94ba6e2cc65726283e2d9447adbeb2b85bd040dc6c4163be62f4bd1b956db52",
-      "sizeBytes": 55594231,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-linux-x64.tar.gz"
+      "sha256": "ca50cad8d2fa78440df97ea416cb79f53c8f20aa59b404f09656baefba256062",
+      "sizeBytes": 55595208,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.14-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.15-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "9a990c793da89c82086c63752aba4751377b921d4ffcfa6615b97704a866b56a",
-      "sizeBytes": 55491923,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.14/agentos-2.0.0-beta.14-linux-arm64.tar.gz"
+      "sha256": "fff6bde4aa4e039ba8b97d74fe86d32f207aaffd2e7884a76426df89be953d59",
+      "sizeBytes": 55492292,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-29T06:03:39.088Z",
-  "releaseNotes": "- Added native Linux `x64` and `arm64` Core release targets so AgentOS can be\n  installed from the same signed release stream on macOS and Linux\n- Added persistent install-level environment files through `--env-file`, with\n  validation and reuse across installation, service startup, health checks,\n  upgrades, and managed restarts\n- Added `AGENTOS_HOME`, `AGENTOS_HOST`, `AGENTOS_PORT`, and\n  `AGENTOS_MANAGE_LOCAL_SANDBOX` as the supported deployment settings, including\n  Core-only Linux installations that use Cube instead of a local sandbox\n- Added the active environment-file path to System settings without exposing\n  its stored configuration values\n- Extended offline and custom-prefix installation coverage so a Linux ARM64\n  server can install Core under `/app` without creating its data directory in\n  the account home\n\n### Verification\n\n- Passed the complete 274-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.14` SDK JAR\n- Passed the Sandbox VMM Go test suite on macOS\n- Passed focused bootstrap-installer, archive-retention, environment-file,\n  Supervisor, and System-settings regression coverage",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.14",
+  "publishedAt": "2026-08-29T07:31:12.173Z",
+  "releaseNotes": "- Allowed valid IPv4 and IPv6 bind addresses in online and offline installers,\n  including `0.0.0.0`, so a Linux server can accept connections from other\n  machines\n- Kept wildcard-bind health checks on a reachable loopback address so install,\n  startup, and managed restart verification work with `0.0.0.0`\n- Documented the current trusted-network boundary for remote listening while\n  keeping the administrator account flow out of this release\n- Kept AgentOS Runtime `1.0.0-beta.4` unchanged because this release changes\n  only Core server and installer behavior\n\n### Verification\n\n- Passed the complete 274-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed focused archive-installer coverage with `AGENTOS_HOST=0.0.0.0`\n- Verified a formally packaged Core install can start on port 4174 with a\n  wildcard bind and report the expected version",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.15",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.14"
+  "version": "2.0.0-beta.15"
 }

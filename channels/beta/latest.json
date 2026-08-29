@@ -2,36 +2,36 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.15-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.17-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "09f106afeb2adc1466930f178d2f5e450701e29f8fe6ff4a0c4524c61a38bf62",
-      "sizeBytes": 49761407,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-darwin-arm64.tar.gz"
+      "sha256": "d7399099e95bd576dc5b30e44c43365948b7d6671e13b6e559e3ead0e1d6d6fb",
+      "sizeBytes": 49762328,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.15-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.17-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "ca50cad8d2fa78440df97ea416cb79f53c8f20aa59b404f09656baefba256062",
-      "sizeBytes": 55595208,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-linux-x64.tar.gz"
+      "sha256": "45138da6f53669cdda068bc473c01fbc7a7f08149ba6e087833b5c4ff32d6224",
+      "sizeBytes": 57073237,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.15-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.17-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "fff6bde4aa4e039ba8b97d74fe86d32f207aaffd2e7884a76426df89be953d59",
-      "sizeBytes": 55492292,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.15/agentos-2.0.0-beta.15-linux-arm64.tar.gz"
+      "sha256": "bd36904e13f99e1cc51ea573c0d5d1a7e9d189e3e365774b9160b1797eeaab7f",
+      "sizeBytes": 56907882,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-29T07:31:12.173Z",
-  "releaseNotes": "- Allowed valid IPv4 and IPv6 bind addresses in online and offline installers,\n  including `0.0.0.0`, so a Linux server can accept connections from other\n  machines\n- Kept wildcard-bind health checks on a reachable loopback address so install,\n  startup, and managed restart verification work with `0.0.0.0`\n- Documented the current trusted-network boundary for remote listening while\n  keeping the administrator account flow out of this release\n- Kept AgentOS Runtime `1.0.0-beta.4` unchanged because this release changes\n  only Core server and installer behavior\n\n### Verification\n\n- Passed the complete 274-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed focused archive-installer coverage with `AGENTOS_HOST=0.0.0.0`\n- Verified a formally packaged Core install can start on port 4174 with a\n  wildcard bind and report the expected version",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.15",
+  "publishedAt": "2026-08-29T09:02:25.193Z",
+  "releaseNotes": "- Restored compatibility with the documented Linux baseline by rebuilding\n  native Core dependencies on GLIBC 2.28 for both `x64` and `arm64`\n- Added release-archive inspection that rejects ELF binaries requiring newer\n  than GLIBC 2.28, GLIBCXX 3.4.25, or CXXABI 1.3.11 before publication\n- Added an installer preflight that stops before download or installation when\n  a Linux host does not provide GLIBC 2.28 or newer\n- Kept AgentOS Runtime `1.0.0-beta.4` unchanged because the Runtime payload and\n  architecture-specific artifacts did not change\n\n### Verification\n\n- Passed the complete 279-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.17` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Passed focused Linux symbol-baseline and installer GLIBC-floor regression\n  coverage",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.17",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.15"
+  "version": "2.0.0-beta.17"
 }

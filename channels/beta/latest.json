@@ -2,36 +2,36 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.17-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.19-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "d7399099e95bd576dc5b30e44c43365948b7d6671e13b6e559e3ead0e1d6d6fb",
-      "sizeBytes": 49762328,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-darwin-arm64.tar.gz"
+      "sha256": "859c2831842be44919eab5541d658422287d686ff121e5e93569b561d502d5d1",
+      "sizeBytes": 50076601,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.17-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.19-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "45138da6f53669cdda068bc473c01fbc7a7f08149ba6e087833b5c4ff32d6224",
-      "sizeBytes": 57073237,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-linux-x64.tar.gz"
+      "sha256": "035bbc2794f05d817cb4535f63eefc24adff9215dfa392aad41e6bb113ca71cd",
+      "sizeBytes": 57385417,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.17-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.19-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "bd36904e13f99e1cc51ea573c0d5d1a7e9d189e3e365774b9160b1797eeaab7f",
-      "sizeBytes": 56907882,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.17/agentos-2.0.0-beta.17-linux-arm64.tar.gz"
+      "sha256": "535362631c59b5e2caddf1ed17649c781bee2f8c1d2bba79509c36ea38207332",
+      "sizeBytes": 57224214,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-29T09:02:25.193Z",
-  "releaseNotes": "- Restored compatibility with the documented Linux baseline by rebuilding\n  native Core dependencies on GLIBC 2.28 for both `x64` and `arm64`\n- Added release-archive inspection that rejects ELF binaries requiring newer\n  than GLIBC 2.28, GLIBCXX 3.4.25, or CXXABI 1.3.11 before publication\n- Added an installer preflight that stops before download or installation when\n  a Linux host does not provide GLIBC 2.28 or newer\n- Kept AgentOS Runtime `1.0.0-beta.4` unchanged because the Runtime payload and\n  architecture-specific artifacts did not change\n\n### Verification\n\n- Passed the complete 279-test TypeScript, Server, UI, and TypeScript SDK suite\n  after a production build\n- Passed all 10 Java 8 SDK tests and built the `2.0.0-beta.17` SDK JAR\n- Passed the Sandbox VMM Go test suite\n- Passed focused Linux symbol-baseline and installer GLIBC-floor regression\n  coverage",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.17",
+  "publishedAt": "2026-08-31T13:33:19.941Z",
+  "releaseNotes": "## AgentOS 2.0.0-beta.19\n\n- Fixed online, offline, install, and repair completion messages so the shown AgentOS URL uses the configured host and port instead of always displaying `http://127.0.0.1:4174`\n- Kept AgentOS Runtime `1.0.0-beta.5` unchanged because this release changes only the Core installer and its regression coverage\n\n### Verification\n\n- Passed the complete 309-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed focused bootstrap-installer regression coverage for the resolved health URL and configured public URL\n- Verified the installer completion message on Linux with a non-default port reports the same URL that its successful health check used",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.19",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.17"
+  "version": "2.0.0-beta.19"
 }

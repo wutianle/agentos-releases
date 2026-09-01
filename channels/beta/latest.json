@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.23-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.24-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "f0ad74bd5c70d3efb158afd7668117b47b2d31e5407fc6b6522677eee20e0332",
-      "sizeBytes": 49863422,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-darwin-arm64.tar.gz"
-    },
-    {
-      "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.23-linux-x64.tar.gz",
-      "kind": "core",
-      "platform": "linux",
-      "sha256": "5188c6c43de91dc3ff48a879aee779aa37c52555c4d9fa649ee4f0b6b80e6ef5",
-      "sizeBytes": 57159904,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-linux-x64.tar.gz"
+      "sha256": "19ac64f4ba45da2914314e2924184bc9c4e2bc9fd76a30fc210c8281a9f5b75e",
+      "sizeBytes": 49864265,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.23-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.24-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "272b5e2571895e06efc7444cd6e5b823b125a1a3c29336935b37d4dcbdc806c7",
-      "sizeBytes": 57005170,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-linux-arm64.tar.gz"
+      "sha256": "e33e3c9dcefb7196e74ca366dc79c703c9580f842e2ebb5024728c029d44dddf",
+      "sizeBytes": 57005540,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-linux-arm64.tar.gz"
+    },
+    {
+      "architecture": "x64",
+      "fileName": "agentos-2.0.0-beta.24-linux-x64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "ff41156ed79c3ef3d7b0d5852f77140f1c025ae22f8ad81f1d6de8de5f5b2b87",
+      "sizeBytes": 57160254,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-01T06:58:15.101Z",
-  "releaseNotes": "## 2.0.0-beta.23 - 2026-09-01\n\n- Completes upgrades started by an older AgentOS page after the new Core reconnects: the new page verifies the signed release again and automatically synchronizes a mismatched installed AgentOS Runtime before reporting success\n- Treats a Runtime-only repair as complete without restarting the already current Core service; Core restarts remain limited to upgrades that actually switch the immutable Core release\n- Keeps Core-only and Cube deployments Core-only, while local Runtime installs continue to reuse AgentOS Runtime `1.0.0-beta.7` when that exact signed component version is already installed\n- Includes the signed paired Core/Runtime upgrade contract and the Codex and OpenCode startup improvements prepared in `2.0.0-beta.22`\n\n### Verification\n\n- Passed focused previous-upgrade continuation, Runtime-only repair, paired online and offline upgrade, unchanged-Runtime, signature, checksum, target, and immutable Core switch tests\n- Passed the complete production build and all 329 TypeScript, Server, UI, and TypeScript SDK tests, plus the Sandbox VMM Go suite and Java 8 SDK tests",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.23",
+  "publishedAt": "2026-09-01T10:47:07.918Z",
+  "releaseNotes": "- Gives every AgentOS data home a stable deployment identity and includes it in Cube workspace ownership, so two AgentOS installations using the same Cube account, template, workspace, and Agent IDs no longer reuse one another's sandbox\n- Applies the same deployment-scoped lookup to the Core-owned model Relay and to old-template retirement, preventing one installation from connecting to or deleting another installation's Cube workspace\n- Leaves legacy Cube sandboxes without a deployment identity untouched during migration so upgrading one installation cannot interrupt another instance that is still running an older Core\n- Reuses AgentOS Runtime `1.0.0-beta.7`; no Runtime package or template payload changed in this Core-only release\n\n### Verification\n\n- Passed focused deployment-identity and Cube provider regression coverage, including two deployments creating the same logical workspace concurrently\n- Verified against the configured Cube service that two deployment identities created distinct sandboxes in 270 ms and 273 ms, then removed both test sandboxes and confirmed no test resource remained\n- Passed the complete production build and all 332 TypeScript, Server, UI, and TypeScript SDK tests, plus the Sandbox VMM Go suite and all 10 Java 8 SDK tests",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.24",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.23"
+  "version": "2.0.0-beta.24"
 }

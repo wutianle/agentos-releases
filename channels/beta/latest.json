@@ -2,36 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.20-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.23-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "ba32cfa0093dc6d5456a1149f043f83c2039817607f9295b0b69cc586fec5ec3",
-      "sizeBytes": 49857404,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-darwin-arm64.tar.gz"
+      "sha256": "f0ad74bd5c70d3efb158afd7668117b47b2d31e5407fc6b6522677eee20e0332",
+      "sizeBytes": 49863422,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.20-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.23-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "4481d93df06ed82e11b71442857476e0c7eee7ac9faa02981e651dfd2d9a9ea4",
-      "sizeBytes": 57159018,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-linux-x64.tar.gz"
+      "sha256": "5188c6c43de91dc3ff48a879aee779aa37c52555c4d9fa649ee4f0b6b80e6ef5",
+      "sizeBytes": 57159904,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.20-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.23-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "d91fb30a3c1f385ce57021341e31d9c99d2eeb9d4bb3a7717bd960aac6efa2f3",
-      "sizeBytes": 57000405,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-linux-arm64.tar.gz"
+      "sha256": "272b5e2571895e06efc7444cd6e5b823b125a1a3c29336935b37d4dcbdc806c7",
+      "sizeBytes": 57005170,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.23/agentos-2.0.0-beta.23-linux-arm64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.7",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-darwin-arm64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "darwin",
+      "sha256": "3cde2b18e3d32e9fcc560bb028da0dd8efabaf9915e2864dbd2ded6dce670724",
+      "sizeBytes": 938919179,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "x64",
+      "componentVersion": "1.0.0-beta.7",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-linux-amd64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "linux",
+      "sha256": "92cc04d65b236da2f818f3d2411613d59cb8daa403e4ca2deaf8de9f6cb23ec6",
+      "sizeBytes": 931896077,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-linux-amd64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.7",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-linux-arm64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "linux",
+      "sha256": "40f87013aee92210189ac5276979d8e400776f223b5ea42f51fe38ca689778ce",
+      "sizeBytes": 923574576,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-01T00:11:07.851Z",
-  "releaseNotes": "## AgentOS 2.0.0-beta.20\n\n- Removed page-level and backend Harness prewarming so each submitted turn owns exactly one Codex or OpenCode execution session and one model lease, while the underlying local or Cube workspace sandbox remains warm between turns\n- Fixed automatic tool approvals so policy-approved calls continue inline without duplicate approval events or duplicate command execution, while genuinely reviewable high-risk calls still wait for the user\n- Updated the official AI SDK Harness adapters and moved Codex and OpenCode to their native adapter configuration paths, including a single OpenCode config source and parallel Codex Runtime preparation\n- Made sandbox cleanup terminate only AgentOS-owned Gateway and Harness processes and improved Cube retry/replacement behavior for transient resume, conflict, and missing-sandbox states\n- Added a strict Core-to-Runtime Harness recipe compatibility contract. An incompatible installed or uploaded Runtime can no longer be reported ready or selected as a stale fallback; the admin service remains available with an actionable Runtime upgrade message\n- Ships with AgentOS Runtime `1.0.0-beta.6`; Core `2.0.0-beta.20` must not be paired with the older `1.0.0-beta.5` Runtime\n\n### Verification\n\n- Passed the complete 314-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed all 102 focused installer, release updater, release security, Runtime package/materializer, Harness compatibility, approval, and Cube lifecycle regression tests\n- Passed the Sandbox VMM Go suite and all 10 Java 8 SDK tests\n- Passed the 70-check final release source preflight, installer shell validation, release-tree whitespace validation, clean-worktree check, and formal tag check",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.20",
+  "publishedAt": "2026-09-01T06:58:15.101Z",
+  "releaseNotes": "## 2.0.0-beta.23 - 2026-09-01\n\n- Completes upgrades started by an older AgentOS page after the new Core reconnects: the new page verifies the signed release again and automatically synchronizes a mismatched installed AgentOS Runtime before reporting success\n- Treats a Runtime-only repair as complete without restarting the already current Core service; Core restarts remain limited to upgrades that actually switch the immutable Core release\n- Keeps Core-only and Cube deployments Core-only, while local Runtime installs continue to reuse AgentOS Runtime `1.0.0-beta.7` when that exact signed component version is already installed\n- Includes the signed paired Core/Runtime upgrade contract and the Codex and OpenCode startup improvements prepared in `2.0.0-beta.22`\n\n### Verification\n\n- Passed focused previous-upgrade continuation, Runtime-only repair, paired online and offline upgrade, unchanged-Runtime, signature, checksum, target, and immutable Core switch tests\n- Passed the complete production build and all 329 TypeScript, Server, UI, and TypeScript SDK tests, plus the Sandbox VMM Go suite and Java 8 SDK tests",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.23",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.20"
+  "version": "2.0.0-beta.23"
 }

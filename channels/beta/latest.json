@@ -2,36 +2,36 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.19-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.20-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "859c2831842be44919eab5541d658422287d686ff121e5e93569b561d502d5d1",
-      "sizeBytes": 50076601,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-darwin-arm64.tar.gz"
+      "sha256": "ba32cfa0093dc6d5456a1149f043f83c2039817607f9295b0b69cc586fec5ec3",
+      "sizeBytes": 49857404,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.19-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.20-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "035bbc2794f05d817cb4535f63eefc24adff9215dfa392aad41e6bb113ca71cd",
-      "sizeBytes": 57385417,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-linux-x64.tar.gz"
+      "sha256": "4481d93df06ed82e11b71442857476e0c7eee7ac9faa02981e651dfd2d9a9ea4",
+      "sizeBytes": 57159018,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.19-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.20-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "535362631c59b5e2caddf1ed17649c781bee2f8c1d2bba79509c36ea38207332",
-      "sizeBytes": 57224214,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.19/agentos-2.0.0-beta.19-linux-arm64.tar.gz"
+      "sha256": "d91fb30a3c1f385ce57021341e31d9c99d2eeb9d4bb3a7717bd960aac6efa2f3",
+      "sizeBytes": 57000405,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.20/agentos-2.0.0-beta.20-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-08-31T13:33:19.941Z",
-  "releaseNotes": "## AgentOS 2.0.0-beta.19\n\n- Fixed online, offline, install, and repair completion messages so the shown AgentOS URL uses the configured host and port instead of always displaying `http://127.0.0.1:4174`\n- Kept AgentOS Runtime `1.0.0-beta.5` unchanged because this release changes only the Core installer and its regression coverage\n\n### Verification\n\n- Passed the complete 309-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed focused bootstrap-installer regression coverage for the resolved health URL and configured public URL\n- Verified the installer completion message on Linux with a non-default port reports the same URL that its successful health check used",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.19",
+  "publishedAt": "2026-09-01T00:11:07.851Z",
+  "releaseNotes": "## AgentOS 2.0.0-beta.20\n\n- Removed page-level and backend Harness prewarming so each submitted turn owns exactly one Codex or OpenCode execution session and one model lease, while the underlying local or Cube workspace sandbox remains warm between turns\n- Fixed automatic tool approvals so policy-approved calls continue inline without duplicate approval events or duplicate command execution, while genuinely reviewable high-risk calls still wait for the user\n- Updated the official AI SDK Harness adapters and moved Codex and OpenCode to their native adapter configuration paths, including a single OpenCode config source and parallel Codex Runtime preparation\n- Made sandbox cleanup terminate only AgentOS-owned Gateway and Harness processes and improved Cube retry/replacement behavior for transient resume, conflict, and missing-sandbox states\n- Added a strict Core-to-Runtime Harness recipe compatibility contract. An incompatible installed or uploaded Runtime can no longer be reported ready or selected as a stale fallback; the admin service remains available with an actionable Runtime upgrade message\n- Ships with AgentOS Runtime `1.0.0-beta.6`; Core `2.0.0-beta.20` must not be paired with the older `1.0.0-beta.5` Runtime\n\n### Verification\n\n- Passed the complete 314-test TypeScript, Server, UI, and TypeScript SDK suite after a production build\n- Passed all 102 focused installer, release updater, release security, Runtime package/materializer, Harness compatibility, approval, and Cube lifecycle regression tests\n- Passed the Sandbox VMM Go suite and all 10 Java 8 SDK tests\n- Passed the 70-check final release source preflight, installer shell validation, release-tree whitespace validation, clean-worktree check, and formal tag check",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.20",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.19"
+  "version": "2.0.0-beta.20"
 }

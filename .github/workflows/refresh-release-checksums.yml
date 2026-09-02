@@ -1,0 +1,32 @@
+name: Refresh Release Checksums
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Release tag whose assets should be checksummed
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download assets and create SHA256SUMS
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          gh release download "$RELEASE_TAG" --dir assets
+          rm -f assets/SHA256SUMS
+          (
+            cd assets
+            find . -maxdepth 1 -type f -printf '%f\n' | LC_ALL=C sort | \
+              while IFS= read -r file; do sha256sum "$file"; done
+          ) > SHA256SUMS
+          gh release upload "$RELEASE_TAG" SHA256SUMS --clobber

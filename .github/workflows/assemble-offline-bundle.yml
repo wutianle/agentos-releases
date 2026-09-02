@@ -1,0 +1,99 @@
+name: Assemble Offline Bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      core_release_tag:
+        description: Core release tag containing latest.json
+        required: true
+        type: string
+      runtime_release_tag:
+        description: Runtime release tag
+        required: true
+        type: string
+      platform:
+        description: Release platform
+        required: true
+        type: choice
+        options:
+          - linux
+          - darwin
+      architecture:
+        description: Manifest architecture
+        required: true
+        type: choice
+        options:
+          - x64
+          - arm64
+      core_asset:
+        description: Core archive file name
+        required: true
+        type: string
+      runtime_asset:
+        description: Runtime archive file name
+        required: true
+        type: string
+      output_asset:
+        description: Offline bundle file name
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download signed manifest and artifacts
+        env:
+          CORE_ASSET: ${{ inputs.core_asset }}
+          CORE_RELEASE_TAG: ${{ inputs.core_release_tag }}
+          GH_TOKEN: ${{ github.token }}
+          RUNTIME_ASSET: ${{ inputs.runtime_asset }}
+          RUNTIME_RELEASE_TAG: ${{ inputs.runtime_release_tag }}
+        run: |
+          set -euo pipefail
+          mkdir -p input
+          gh release download "$CORE_RELEASE_TAG" --dir input \
+            --pattern latest.json --pattern latest.json.sig --pattern "$CORE_ASSET"
+          gh release download "$RUNTIME_RELEASE_TAG" --dir input \
+            --pattern "$RUNTIME_ASSET"
+
+      - name: Verify and package offline bundle
+        env:
+          ARCHITECTURE: ${{ inputs.architecture }}
+          CORE_ASSET: ${{ inputs.core_asset }}
+          OUTPUT_ASSET: ${{ inputs.output_asset }}
+          PLATFORM: ${{ inputs.platform }}
+          RUNTIME_ASSET: ${{ inputs.runtime_asset }}
+        run: |
+          set -euo pipefail
+          case "$CORE_ASSET$RUNTIME_ASSET$OUTPUT_ASSET" in
+            *..*|*/*) echo "Invalid asset name" >&2; exit 1 ;;
+          esac
+          version=$(jq -r '.version' input/latest.json)
+          core_sha=$(jq -er --arg name "$CORE_ASSET" \
+            '.artifacts[] | select(.kind == "core" and .fileName == $name) | .sha256' \
+            input/latest.json)
+          runtime_sha=$(jq -er --arg name "$RUNTIME_ASSET" \
+            '.artifacts[] | select(.kind == "sandbox-runtime" and .fileName == $name) | .sha256' \
+            input/latest.json)
+          printf '%s  %s\n' "$core_sha" "input/$CORE_ASSET" | sha256sum --check --strict
+          printf '%s  %s\n' "$runtime_sha" "input/$RUNTIME_ASSET" | sha256sum --check --strict
+
+          root="agentos-offline-${version}-${PLATFORM}-${ARCHITECTURE}"
+          mkdir -p "bundle/$root/artifacts"
+          cp input/latest.json "bundle/$root/release-manifest.json"
+          cp input/latest.json.sig "bundle/$root/release-manifest.json.sig"
+          cp "input/$CORE_ASSET" "bundle/$root/artifacts/$CORE_ASSET"
+          cp "input/$RUNTIME_ASSET" "bundle/$root/artifacts/$RUNTIME_ASSET"
+          tar --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 \
+            --numeric-owner -C bundle -czf "$OUTPUT_ASSET" "$root"
+
+      - name: Upload offline bundle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTPUT_ASSET: ${{ inputs.output_asset }}
+          RELEASE_TAG: ${{ inputs.core_release_tag }}
+        run: gh release upload "$RELEASE_TAG" "$OUTPUT_ASSET" --clobber

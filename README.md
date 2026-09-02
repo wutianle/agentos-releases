@@ -24,3 +24,6 @@ Release maintainers can use the manual `Import Release Asset` workflow to copy
 an already-built archive from a temporary HTTPS URL into an existing release.
 The workflow verifies the expected SHA-256 digest before upload, so CI-built
 artifacts do not need to be downloaded to and re-uploaded from a workstation.
+The companion `Assemble Offline Bundle` and `Refresh Release Checksums`
+workflows package already-published platform artifacts and regenerate release
+checksums entirely inside GitHub.

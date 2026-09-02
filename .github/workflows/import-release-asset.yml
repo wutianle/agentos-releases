@@ -1,0 +1,49 @@
+name: Import Release Asset
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing destination release tag
+        required: true
+        type: string
+      asset_name:
+        description: Destination asset file name
+        required: true
+        type: string
+      source_url:
+        description: Temporary HTTPS URL for the release asset
+        required: true
+        type: string
+      sha256:
+        description: Expected SHA-256 digest
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download and verify asset
+        env:
+          ASSET_NAME: ${{ inputs.asset_name }}
+          ASSET_URL: ${{ inputs.source_url }}
+          EXPECTED_SHA256: ${{ inputs.sha256 }}
+        run: |
+          set -euo pipefail
+          case "$ASSET_NAME" in
+            */*|""|.*) echo "Invalid asset name" >&2; exit 1 ;;
+          esac
+          curl --fail --location --retry 5 --retry-delay 2 \
+            --output "$ASSET_NAME" "$ASSET_URL"
+          printf '%s  %s\n' "$EXPECTED_SHA256" "$ASSET_NAME" | sha256sum --check --strict
+
+      - name: Upload verified asset
+        env:
+          ASSET_NAME: ${{ inputs.asset_name }}
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: gh release upload "$RELEASE_TAG" "$ASSET_NAME" --clobber

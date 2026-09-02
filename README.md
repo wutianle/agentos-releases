@@ -19,3 +19,8 @@ curl -fsSL https://github.com/wutianle/agentos-releases/releases/download/v<vers
 
 The installer does not require GitHub CLI or a GitHub account. Every archive is
 validated against its published size and SHA-256 metadata before installation.
+
+Release maintainers can use the manual `Import Release Asset` workflow to copy
+an already-built archive from a temporary HTTPS URL into an existing release.
+The workflow verifies the expected SHA-256 digest before upload, so CI-built
+artifacts do not need to be downloaded to and re-uploaded from a workstation.

@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.24-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.25-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "19ac64f4ba45da2914314e2924184bc9c4e2bc9fd76a30fc210c8281a9f5b75e",
-      "sizeBytes": 49864265,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-darwin-arm64.tar.gz"
+      "sha256": "6ddb5915c6ac3f76c3e499728934df460be6673bcc7fbdc9a524a6eb47123814",
+      "sizeBytes": 49865302,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.25/agentos-2.0.0-beta.25-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.24-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.25-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e33e3c9dcefb7196e74ca366dc79c703c9580f842e2ebb5024728c029d44dddf",
-      "sizeBytes": 57005540,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-linux-arm64.tar.gz"
+      "sha256": "b2b46ed7d3a127f509f02cc8b4e66ea3234397bef62bc9000a8de2cf83892041",
+      "sizeBytes": 57008529,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.25/agentos-2.0.0-beta.25-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.24-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.25-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "ff41156ed79c3ef3d7b0d5852f77140f1c025ae22f8ad81f1d6de8de5f5b2b87",
-      "sizeBytes": 57160254,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.24/agentos-2.0.0-beta.24-linux-x64.tar.gz"
+      "sha256": "eaad033a933d5916842ceea92f743c905e131ef3dddd06224b00fea210277cde",
+      "sizeBytes": 57163180,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.25/agentos-2.0.0-beta.25-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.7",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.8",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.8-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "3cde2b18e3d32e9fcc560bb028da0dd8efabaf9915e2864dbd2ded6dce670724",
-      "sizeBytes": 938919179,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-darwin-arm64.tar.gz"
+      "sha256": "b2f9f29393ce49e562f9adfada412cec5c18a2f8564fe24c6ccf746aba0a4b39",
+      "sizeBytes": 938945315,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.8/agentos-sandbox-runtime-1.0.0-beta.8-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.7",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.8",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.8-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "92cc04d65b236da2f818f3d2411613d59cb8daa403e4ca2deaf8de9f6cb23ec6",
-      "sizeBytes": 931896077,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-linux-amd64.tar.gz"
+      "sha256": "66cad4249a32168b59c6f4ad59b27ce9d7548b1d815fbc948be682f65bea1cc9",
+      "sizeBytes": 931927453,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.8/agentos-sandbox-runtime-1.0.0-beta.8-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.7",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.7-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.8",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.8-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "40f87013aee92210189ac5276979d8e400776f223b5ea42f51fe38ca689778ce",
-      "sizeBytes": 923574576,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.7/agentos-sandbox-runtime-1.0.0-beta.7-linux-arm64.tar.gz"
+      "sha256": "220d69e734f2f99732a9765a04adb0614c20dbe3c2e8d61376f78a70fd83752f",
+      "sizeBytes": 923575121,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.8/agentos-sandbox-runtime-1.0.0-beta.8-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-01T10:47:07.918Z",
-  "releaseNotes": "- Gives every AgentOS data home a stable deployment identity and includes it in Cube workspace ownership, so two AgentOS installations using the same Cube account, template, workspace, and Agent IDs no longer reuse one another's sandbox\n- Applies the same deployment-scoped lookup to the Core-owned model Relay and to old-template retirement, preventing one installation from connecting to or deleting another installation's Cube workspace\n- Leaves legacy Cube sandboxes without a deployment identity untouched during migration so upgrading one installation cannot interrupt another instance that is still running an older Core\n- Reuses AgentOS Runtime `1.0.0-beta.7`; no Runtime package or template payload changed in this Core-only release\n\n### Verification\n\n- Passed focused deployment-identity and Cube provider regression coverage, including two deployments creating the same logical workspace concurrently\n- Verified against the configured Cube service that two deployment identities created distinct sandboxes in 270 ms and 273 ms, then removed both test sandboxes and confirmed no test resource remained\n- Passed the complete production build and all 332 TypeScript, Server, UI, and TypeScript SDK tests, plus the Sandbox VMM Go suite and all 10 Java 8 SDK tests",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.24",
+  "publishedAt": "2026-09-02T01:50:55.315Z",
+  "releaseNotes": "- Makes AgentOS the single approval authority for both Codex and OpenCode: policy-approved tools continue without user interruption, while reviewable operations create one AgentOS approval and resume the same native tool call after the user decides\n- Keeps the prepared Harness session, sandbox process, bridge, and model lease attached while a Run waits for approval, preventing duplicated assistant turns, repeated processing indicators, interrupted commands, and approval continuations that silently start a second execution\n- Adapts OpenCode permission events into the same ordered tool-call and approval stream used by Codex, including forwarding external-directory decisions to AgentOS instead of letting the native Harness apply a separate hidden policy\n- Treats shell no-op commands and output redirection to `/dev/null`, standard streams, or existing file descriptors as non-mutating, so read-only system inspection does not request high-risk approval merely because it suppresses diagnostic output\n- Resumes browser and External SDK event streams without emitting a second execution or assistant start, and patches the persisted assistant message during approval continuation instead of rendering a duplicate response\n- Enables Linux systemd user lingering during bootstrap installation so the AgentOS service survives the final SSH logout and starts with the host; online, local-archive, and offline bootstrap sources share this behavior\n- Ships with AgentOS Runtime `1.0.0-beta.8`, whose OpenCode Bootstrap contains the matching approval-authority and permission-ordering Bridge recipe\n- Does not change the public TypeScript or Java SDK request/response schemas\n\n### Verification\n\n- Passed TypeScript checking, the complete production build, and all 336 TypeScript, Server, UI, and TypeScript SDK tests, including approval-policy, Run executor, OpenCode adapter, Cube lifecycle, External SDK, installer, and online/offline upgrade coverage\n- Passed the Sandbox VMM Go suite and all 10 Java 8 SDK tests\n- Passed the 67-check release source preflight and installer shell validation\n- Verified all four real browser paths against a prepared Cube template: Codex and OpenCode read-only commands ran without approval, while each high-risk command showed one approval and continued in the same assistant response; the browser console remained free of errors",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.25",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.24"
+  "version": "2.0.0-beta.25"
 }

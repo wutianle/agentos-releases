@@ -22,11 +22,12 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p assets
-          gh release download "$RELEASE_TAG" --dir assets
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --dir assets
           rm -f assets/SHA256SUMS
           (
             cd assets
             find . -maxdepth 1 -type f -printf '%f\n' | LC_ALL=C sort | \
               while IFS= read -r file; do sha256sum "$file"; done
           ) > SHA256SUMS
-          gh release upload "$RELEASE_TAG" SHA256SUMS --clobber
+          gh release upload "$RELEASE_TAG" SHA256SUMS --clobber \
+            --repo "$GITHUB_REPOSITORY"

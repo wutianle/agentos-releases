@@ -46,4 +46,6 @@ jobs:
           ASSET_NAME: ${{ inputs.asset_name }}
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.release_tag }}
-        run: gh release upload "$RELEASE_TAG" "$ASSET_NAME" --clobber
+        run: >-
+          gh release upload "$RELEASE_TAG" "$ASSET_NAME" --clobber
+          --repo "$GITHUB_REPOSITORY"

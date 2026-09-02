@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.26-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.28-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "21d298e498bf9419419d61bf89387de1e2ab99fc18d4fdce2027beb3ae765a36",
-      "sizeBytes": 49870173,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.26/agentos-2.0.0-beta.26-darwin-arm64.tar.gz"
+      "sha256": "212a5293a0f30f6848f54e1b8e06cef30d5d9b05baed8f18456daf3f1ce86fa8",
+      "sizeBytes": 49886387,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.28/agentos-2.0.0-beta.28-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.26-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.28-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "622582ba07a3607bcf1e7f908cb1473bad00d2412e57eb841e2dabd738756495",
-      "sizeBytes": 57014559,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.26/agentos-2.0.0-beta.26-linux-arm64.tar.gz"
+      "sha256": "fccf68d1a190fde889cdba181f45712ce21348adbe6f8128f58e30e45046dd36",
+      "sizeBytes": 57027541,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.28/agentos-2.0.0-beta.28-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.26-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.28-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "da42245f9fbde82b018c0ea8e8c85806a4c98776eb61b001991df72b5e2b3d8d",
-      "sizeBytes": 57168923,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.26/agentos-2.0.0-beta.26-linux-x64.tar.gz"
+      "sha256": "8d8759910c90d0249c2632543df4dd7d78fd7406322bb26e203ad185a5d1863a",
+      "sizeBytes": 57181370,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.28/agentos-2.0.0-beta.28-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.9",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.9-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.11",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.11-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "045a8dbad66cbb0843391bf13c4c7dd044dcff52852cc61c653bd1fbb12ac025",
-      "sizeBytes": 938959759,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.9/agentos-sandbox-runtime-1.0.0-beta.9-darwin-arm64.tar.gz"
+      "sha256": "8999cca8a555f1d3d356bf7b7a96d96e9d356c9a6883e2579eb6a0ffa3096e8d",
+      "sizeBytes": 942621939,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.11/agentos-sandbox-runtime-1.0.0-beta.11-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.9",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.9-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.11",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.11-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "1b55c9355b2bbff070254db244e803895a44cfe2e233cea4199c21f87516e462",
-      "sizeBytes": 931933618,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.9/agentos-sandbox-runtime-1.0.0-beta.9-linux-amd64.tar.gz"
+      "sha256": "96788d26212a2185092171e6e8390f977f0b6a50def948df66a0b498640903f1",
+      "sizeBytes": 936346170,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.11/agentos-sandbox-runtime-1.0.0-beta.11-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.9",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.9-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.11",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.11-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "8322047b367f3362eb2837c9e9d160289f950172de839a6f6e8622124251123e",
-      "sizeBytes": 923565769,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.9/agentos-sandbox-runtime-1.0.0-beta.9-linux-arm64.tar.gz"
+      "sha256": "7b07e368b39481d73c881aee59186489198c845115e99487c7894be90ead8011",
+      "sizeBytes": 927235940,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.11/agentos-sandbox-runtime-1.0.0-beta.11-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-02T04:41:54.058Z",
-  "releaseNotes": "- Treats Codex and OpenCode as two adapters of one AI SDK Harness execution\n  layer: both now share the same concurrent workspace, model-routing,\n  approval, warm-session, and lifecycle rules instead of carrying separate\n  process-ownership assumptions\n- Reuses one Codex app-server or one OpenCode native Server inside each\n  physical workspace while keeping an independent native Thread or Session,\n  lightweight AI SDK Bridge, signed model lease, message stream, timer, and\n  approval continuation for every AgentOS conversation\n- Allows different conversations using the same Agent and workspace to run at\n  the same time without starting a full Harness core for every message or\n  stopping another conversation's warm Bridge when users switch between them\n- Reuses one multi-Run AgentOS Gateway and one Core-owned reverse model Relay\n  per physical workspace. Every model request carries its own signed lease, so\n  concurrent conversations cannot exchange provider routes, models, output\n  ceilings, or credentials\n- Shares one local or Cube workspace sandbox across concurrent logical\n  conversations with reference-counted ownership, per-conversation process\n  cleanup, dynamic Bridge ports, and last-reference physical stop or destroy\n- Hydrates a shared durable workspace once for a concurrent conversation\n  cohort and checkpoints it once after the last conversation releases it,\n  while still serializing incompatible provider or template generations\n- Keeps the existing one-unfinished-Run rule within one AgentOS conversation;\n  concurrency is intentionally across independent conversations for both\n  Agent-shared and user-isolated workspace modes\n- Ships with AgentOS Runtime `1.0.0-beta.9`, which contains the matching shared\n  Gateway, Codex app-server transport, and OpenCode native-service recipes\n- Does not change the public TypeScript or Java SDK request/response schemas\n\n### Verification\n\n- Passed TypeScript checking, the complete production build, and all 344\n  TypeScript, Server, UI, and TypeScript SDK tests\n- Passed symmetric Codex and OpenCode approval-continuation tests, concurrent\n  signed-lease isolation, concurrent durable-workspace hydration, and shared\n  local/Cube physical-sandbox lifecycle coverage",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.26",
+  "publishedAt": "2026-09-02T14:21:50.601Z",
+  "releaseNotes": "## 2.0.0-beta.28 - 2026-09-02\n\n- Treats one Agent/workspace scope as one durable virtual server for both\n  Codex and OpenCode: concurrent conversations share the same physical\n  sandbox, filesystem, Gateway, and native Harness service while retaining\n  independent Run state, native Thread or Session, model lease, tools,\n  approval continuation, message stream, and dynamic Bridge port\n- Makes AgentOS the common approval authority for both Harnesses. Policy-safe\n  operations continue automatically, high-risk operations render one approval,\n  and OpenCode reuses that single decision when one native tool call requests\n  multiple underlying permissions\n- Routes every OpenCode model request and AgentOS Host Tool through\n  session-scoped state in the shared native Server, preventing concurrent\n  conversations from exchanging model credentials, tool catalogs, or relay\n  endpoints\n- Activates Skill and memory projections atomically by content fingerprint and\n  skips unchanged copies. A changed Skill generation waits for the active\n  workspace cohort to finish before the next conversation uses it\n- Migrates existing conversations across local or Cube template generations by\n  draining or safely interrupting active Runs, clearing stale Harness resume\n  state, restoring the durable workspace, and retiring old-template sandboxes\n- Uses reference-counted dynamic ports for concurrent local-sandbox Bridges and\n  binds Cube model relays directly to the acquired sandbox instead of resolving\n  them by an ambiguous workspace lookup\n- Ships with AgentOS Runtime `1.0.0-beta.11`, containing the matching Codex and\n  OpenCode recipes plus the pinned Runtime toolchain\n- Does not change the public TypeScript or Java SDK request/response schemas\n\n### Verification\n\n- Passed the complete production build and all 364 TypeScript, Server, UI,\n  Harness, Runtime, and TypeScript SDK tests\n- Passed real-browser Codex and OpenCode high-risk approval continuation,\n  low-risk automatic execution, and concurrent same-workspace conversation\n  checks without duplicate messages, approvals, or timers\n- Passed the complete Go Runtime suite and all 10 Java SDK tests\n- Passed 97 focused installer, release, Runtime bundle, template migration,\n  shared-workspace, model-routing, Skill, memory, and approval tests\n- Passed signed local `2.0.0-beta.27` to `2.0.0-beta.28` offline upgrade,\n  packaged macOS Runtime command checks, and a real ARM64/glibc 2.28 Linux\n  Core upgrade with a healthy persistent service",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.28",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.26"
+  "version": "2.0.0-beta.28"
 }

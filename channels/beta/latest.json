@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.30-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.32-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "22b472ca7c3864287f4ddb47434ff1f8902b40c75d63fd8f7360ab3d9cd4ea0b",
-      "sizeBytes": 49939792,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.30/agentos-2.0.0-beta.30-darwin-arm64.tar.gz"
+      "sha256": "c49dde14fd09801f3c81f94dbed59174a489ade8ef7ecd2d0872fc06170059bb",
+      "sizeBytes": 49941886,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.32/agentos-2.0.0-beta.32-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.30-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.32-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "665542de2f315d562ae5e302c3a63ef7713962c60a8d4d3b986128b41c89ef4b",
-      "sizeBytes": 57292347,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.30/agentos-2.0.0-beta.30-linux-arm64.tar.gz"
+      "sha256": "9fb96ea7e7ecbb43e9454d499cffcf778d3fb88a5fb7d6b9cb93bd8d18545c69",
+      "sizeBytes": 57293708,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.32/agentos-2.0.0-beta.32-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.30-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.32-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e7600d26eba2bf6bf6e46b41ade0f35e4efb6e3046de73073a5c5fd472786842",
-      "sizeBytes": 57459065,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.30/agentos-2.0.0-beta.30-linux-x64.tar.gz"
+      "sha256": "7b05a6e90b5afc7bff157e5b6595ff6b7bd0cbcba7515f9efc334b5d5d18d87f",
+      "sizeBytes": 57460326,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.32/agentos-2.0.0-beta.32-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-04T08:58:52.985Z",
-  "releaseNotes": "## 2.0.0-beta.30 - 2026-09-04\n\n- Adds durable sandbox lifecycle governance across local and Cube providers:\n  warm workspaces are paused after inactivity, retired after the retention\n  window or capacity pressure, and restored from the durable workspace on the\n  next Run without losing conversation history\n- Reconciles AgentOS-owned orphan, duplicate, incompatible, and failed-cleanup\n  sandbox resources through one restart-safe lifecycle journal instead of\n  leaving historical conversations pinned to stale physical sandboxes\n- Makes Sandbox provider and Runtime-generation changes drain active Runs,\n  rebind durable Sessions, clear incompatible Harness continuation state, and\n  recover deterministically after an interrupted Core restart\n- Adds fair, configurable admission control for global execution, sandbox\n  preparation, Codex-per-sandbox, and OpenCode-per-sandbox concurrency, with\n  durable settings and live queue counters in system settings\n- Exposes `queued`, `environment_preparing`, and `execution_start` as distinct\n  SDK and playground phases so clients can separate capacity waits, sandbox\n  startup, and model execution without counting preparation as response time\n- Serializes template materialization, persists Cube template and build IDs as\n  soon as a build is accepted, and resumes the same build after refresh or\n  restart instead of creating parallel templates\n- Keeps conversation execution state scoped to the displayed Session across\n  refresh and navigation, preventing a background conversation from replacing\n  another conversation's queue, preparation, timer, or stop state\n- Refreshes the settings experience with visual system/light/dark theme cards,\n  consistent surfaces and interaction depth, clearer advanced capacity\n  settings, and an input-replacing template preparation state\n- Updates the TypeScript and Java SDK event vocabulary with\n  `environment_preparing` while retaining forward-compatible event parsing\n- Ships with AgentOS Runtime `1.0.0-beta.13`, containing the matching local\n  sandbox inventory protocol used by lifecycle reconciliation\n\n### Verification\n\n- Passed the complete production build and all 407 TypeScript, Server, UI,\n  Harness, Runtime, and TypeScript SDK tests\n- Passed all AgentOS Sandbox VMM Go tests and all 10 Java SDK tests\n- Passed 117 focused lifecycle, capacity, migration, template, provider, SDK,\n  and UI regression tests\n- Completed real Cube-backed browser conversations with both Codex and\n  OpenCode; observed completed response durations of 4.291 seconds and 7.697\n  seconds respectively, with no browser warnings or errors",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.30",
+  "publishedAt": "2026-09-07T01:25:22.176Z",
+  "releaseNotes": "## 2.0.0-beta.32 - 2026-09-07\n\n- Blocks new messages while the selected sandbox template is preparing or\n  failed, including rebuilds triggered by upgrades and manual changes; an old\n  usable fallback no longer bypasses the readiness gate\n- Keeps chat readiness current through a lightweight status endpoint, replacing\n  the entire composer during preparation and restoring it after activation\n- Reuses the same server-side gate for Codex, OpenCode, published APIs and the\n  external SDK; existing Runs and approval responses remain unaffected\n- Activates a manually prepared default template after draining existing Runs,\n  and rechecks the selected provider and configuration before activation\n- Reuses Runtime `1.0.0-beta.13`; no Runtime image or Harness dependency changes\n\n### Verification\n\n- Passed production build, type checks and all 414 automated tests\n- Verified a real Cube rebuild with an old usable template: chat composer\n  replacement and navigation recovery, with both Harness message endpoints\n  rejecting new requests during preparation",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.32",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.30"
+  "version": "2.0.0-beta.32"
 }

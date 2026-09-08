@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.35-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.36-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "8eb413ab668891d8deefd0a641d36f48a2b0be94b06cb20c8970783dbcc52b9b",
-      "sizeBytes": 49953927,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.35/agentos-2.0.0-beta.35-darwin-arm64.tar.gz"
+      "sha256": "e4537780eb1ec418e3e8da57eef7273e26d3bc9206c7191ba375c78031b91753",
+      "sizeBytes": 49955314,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.36/agentos-2.0.0-beta.36-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.35-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.36-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "c663af6cb08364233882d807efb2963211a14f67e7af6259fbf18571a5b3cb02",
-      "sizeBytes": 57305961,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.35/agentos-2.0.0-beta.35-linux-arm64.tar.gz"
+      "sha256": "6eb71ed705db6645afa0d7190e1b0f6dc34224c616966d2d1ae665e414b1dcaa",
+      "sizeBytes": 57308626,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.36/agentos-2.0.0-beta.36-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.35-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.36-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "588540ae9583e2d36927f0a6af4ed17559dcc31539c152e172379c0842dab4a9",
-      "sizeBytes": 57473399,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.35/agentos-2.0.0-beta.35-linux-x64.tar.gz"
+      "sha256": "480d935e8277b65d8558f9cfde87a48123dd672ad52823a0d9936c94ca3e9981",
+      "sizeBytes": 57476832,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.36/agentos-2.0.0-beta.36-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.15",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.15-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.16",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.16-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "92bae10a0b08f13359dfe9734ac768395a91ea7288d627d83d0e3c2829409b6d",
-      "sizeBytes": 974799406,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.15/agentos-sandbox-runtime-1.0.0-beta.15-darwin-arm64.tar.gz"
+      "sha256": "c81023680167adf2f57f06bbc8b306b9549cfc768247d96292004c05983bb6c7",
+      "sizeBytes": 974803507,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.16/agentos-sandbox-runtime-1.0.0-beta.16-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.16",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.16-linux-arm64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "linux",
+      "sha256": "5538d31f6f1a83b1ae58ae8da4a0d0cf3bde5d1113063ca4083009a1f7517a8d",
+      "sizeBytes": 959456096,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.16/agentos-sandbox-runtime-1.0.0-beta.16-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.15",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.15-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.16",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.16-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "30e775bb79a83d072b76743b74bdb736d3abef1fa15500b86b5c68d7a0364908",
-      "sizeBytes": 968684569,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.15/agentos-sandbox-runtime-1.0.0-beta.15-linux-amd64.tar.gz"
-    },
-    {
-      "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.15",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.15-linux-arm64.tar.gz",
-      "kind": "sandbox-runtime",
-      "platform": "linux",
-      "sha256": "ace5a48b2ec382b4d810b1fa38132ca2ca9aa81475bcf0a3af694db622eaef1c",
-      "sizeBytes": 959479307,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.15/agentos-sandbox-runtime-1.0.0-beta.15-linux-arm64.tar.gz"
+      "sha256": "7e2119dfdf11f0ab43ab85ef9c5916443c7d15f11c4942be3cfa6317184c1592",
+      "sizeBytes": 968525553,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.16/agentos-sandbox-runtime-1.0.0-beta.16-linux-amd64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-08T02:23:32.430Z",
-  "releaseNotes": "- Includes all stability fixes from the unpublished beta.33 and beta.34\n  candidates: approval recovery, model-access renewal, workspace lifecycle,\n  WebSocket cancellation and concurrent local sandbox metadata updates\n- Aligns automatic Cube Runtime downloads with installer Runtime\n  `1.0.0-beta.15`, preventing upgraded services from resolving the old Runtime\n- Adds a release regression guard requiring the Cube default, installer\n  Runtime version and Runtime tag to agree\n- Public SDK contracts and the Harness environment remain unchanged from\n  the beta.34 candidate; no new Runtime image rebuild is required\n\n### Verification\n\n- Passed type checks, production build and 453 automated tests\n- Retains the beta.34 VMM race, browser refresh and real Harness verification\n- Large-scale 2000-user capacity is not certified by this release",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.35",
+  "publishedAt": "2026-09-08T09:37:37.891Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.36\n\n- 修复 Codex 原生审批事件关联不到工具调用的问题，保持单次工具调用与结果一致\n- Codex Host Tools 使用固定版本 App Server 原生动态工具接口，保留 AgentOS / AI SDK 审批流程\n- 拒绝未注册、缺少作用域和跨轮次的工具请求，不放宽沙箱权限\n- Codex 与 OpenCode 的异常审批关联统一显示可操作的安全错误\n- 配套 Runtime 1.0.0-beta.16，更新 Codex Bridge 与协议适配；Node、Codex、OpenCode 版本不变\n- 外部 SDK 契约不变\n\n验证：类型检查、生产构建、467 项自动化测试；隔离 Cube 环境中真实 Codex / OpenCode 的允许、拒绝和自动放行流程（受控模型响应）。未重放原始业务操作，不作新增容量承诺",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.36",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.35"
+  "version": "2.0.0-beta.36"
 }

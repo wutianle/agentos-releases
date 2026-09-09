@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.37-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.38-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "d13fb889428796c83300e37f9fd9903d385e4f48e022123efb716f08f51839c4",
-      "sizeBytes": 49956444,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.37/agentos-2.0.0-beta.37-darwin-arm64.tar.gz"
+      "sha256": "b5f3fc1a33646585dfab01c703ef11aa6dc794d0672076914fbf758b2eb34a55",
+      "sizeBytes": 49957082,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.37-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.38-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "a72629a81db5b9a610b3bf726af29269cca6a341375e75359dbea0497ed67df4",
-      "sizeBytes": 57310201,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.37/agentos-2.0.0-beta.37-linux-arm64.tar.gz"
+      "sha256": "968eb9d141e0b5394d570ab55c90d7c97c09c7bb7a92ee0776b2d7a55fd5889a",
+      "sizeBytes": 57310878,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.37-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.38-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "1ac169101442fd39031223b3c620f3001be1537f9ced9c7751d33492442a69b1",
-      "sizeBytes": 57478502,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.37/agentos-2.0.0-beta.37-linux-x64.tar.gz"
+      "sha256": "79785b7cbb3a14078e1fd4a26d46c66cce25798b2b13a4b5d46e73598a908a76",
+      "sizeBytes": 57479089,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.17",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.17-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.18",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.18-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "01b5cd76af016a1288ccab1ea1128c54a188b6168d991f14de2115e59c73530b",
-      "sizeBytes": 974799931,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.17/agentos-sandbox-runtime-1.0.0-beta.17-darwin-arm64.tar.gz"
+      "sha256": "9f53dc40d1eb211745c73c77281afd46daef17451997187697c550ba7dd82bbf",
+      "sizeBytes": 974800885,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.18/agentos-sandbox-runtime-1.0.0-beta.18-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.17",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.17-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.18",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.18-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "542f4d928f974c5aa88eeb1582e13ab8701340b34d8921ff365b15886c39b612",
-      "sizeBytes": 968541327,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.17/agentos-sandbox-runtime-1.0.0-beta.17-linux-amd64.tar.gz"
+      "sha256": "26b5b1d01b9c22e861b5fa9194387e3e2295a0212dc4bd0b632d3beec7c73af8",
+      "sizeBytes": 968545552,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.18/agentos-sandbox-runtime-1.0.0-beta.18-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.17",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.17-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.18",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.18-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "a80705b2027e03f5e25d192ea540488fa8a1ee41d001e2cb421b936094d11a1a",
-      "sizeBytes": 959513876,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.17/agentos-sandbox-runtime-1.0.0-beta.17-linux-arm64.tar.gz"
+      "sha256": "3104d2e92ee1c0c3f2a500c76274acc3470acd84cbaab7f68397fe9b3532c09f",
+      "sizeBytes": 959514790,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.18/agentos-sandbox-runtime-1.0.0-beta.18-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-09T02:15:23.735Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.37 / Runtime 1.0.0-beta.17\n\n- 修复 Codex 工具审批被拒绝、原生事件未携带命令输出时，AgentOS 错误要求恢复工具结果而导致整个会话报错的问题。\n- 拒绝审批仍会阻止对应工具执行；不自动重试被拒绝的操作。保留 Harness 原生的正常结束或继续行为。\n- Codex 和 OpenCode 审批回归均已验证。Runtime 包含更新后的 Codex 桥接实现，因此本次需同步更新 Runtime。\n\n- 修复 Codex 失败工具结果遗漏 AI SDK 错误标记，避免被拒绝或失败的命令显示为已成功运行。\n\n- 统一 Codex / OpenCode 拒绝审批的 AI SDK 消息状态，并兼容历史错误记录，避免后续消息被历史校验拒绝。\n\n验证：479 项测试与类型检查通过；真实 Codex 和 OpenCode Harness 与沙箱测试确认拒绝的写入未执行，错误标记得到保留，后续允许的系统架构查询可获得真实输出。",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.37",
+  "publishedAt": "2026-09-09T03:47:32.360Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.38 / Runtime 1.0.0-beta.18\n\n- 修复 Codex 拒绝单个工具时误用取消整轮决策，拒绝后继续原任务，不重发提示、不重试被拒绝操作。\n- Codex 与 OpenCode 均通过真实模型审批续行测试：拒绝写入后执行只读命令，完整输出 1～120 和结束标记。\n- 修复安装器回归测试的服务控制隔离，避免测试影响开发机器的正式服务。\n- 更新沙箱内 Codex 传输组件；审批策略、SDK 合约及 OpenCode 原有拒绝语义保持不变。",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.38",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.37"
+  "version": "2.0.0-beta.38"
 }

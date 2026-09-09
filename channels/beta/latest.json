@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.38-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.39-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "b5f3fc1a33646585dfab01c703ef11aa6dc794d0672076914fbf758b2eb34a55",
-      "sizeBytes": 49957082,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-darwin-arm64.tar.gz"
+      "sha256": "09707a147d26ad9b2f2701c9fa3bee16a70be8be6fdec9f51b2d43de84a19f67",
+      "sizeBytes": 49957553,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.39/agentos-2.0.0-beta.39-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.38-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.39-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "968eb9d141e0b5394d570ab55c90d7c97c09c7bb7a92ee0776b2d7a55fd5889a",
-      "sizeBytes": 57310878,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-linux-arm64.tar.gz"
+      "sha256": "ce0314f0f17129ffc21f150d45ea56d6a4a79d372e38fa021ecd75b84b9d8b0e",
+      "sizeBytes": 57311518,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.39/agentos-2.0.0-beta.39-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.38-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.39-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "79785b7cbb3a14078e1fd4a26d46c66cce25798b2b13a4b5d46e73598a908a76",
-      "sizeBytes": 57479089,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.38/agentos-2.0.0-beta.38-linux-x64.tar.gz"
+      "sha256": "627572024af323b591205c1a084481eda6f4c66705cc42329a76bbc75c556db1",
+      "sizeBytes": 57479640,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.39/agentos-2.0.0-beta.39-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-09T03:47:32.360Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.38 / Runtime 1.0.0-beta.18\n\n- 修复 Codex 拒绝单个工具时误用取消整轮决策，拒绝后继续原任务，不重发提示、不重试被拒绝操作。\n- Codex 与 OpenCode 均通过真实模型审批续行测试：拒绝写入后执行只读命令，完整输出 1～120 和结束标记。\n- 修复安装器回归测试的服务控制隔离，避免测试影响开发机器的正式服务。\n- 更新沙箱内 Codex 传输组件；审批策略、SDK 合约及 OpenCode 原有拒绝语义保持不变。",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.38",
+  "publishedAt": "2026-09-09T06:56:06.633Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.39\n\n- Fixes closing delivery text being hidden after a final Todo/tool update.\n- Web and external SDK share final-step classification for live output, reconnect and history.\n- Conversation data is preserved without migration.\n- Reuses AgentOS Runtime 1.0.0-beta.18. No Runtime or sandbox-template rebuild is required.\n- The offline bundles in this Core-only release contain Core and signed channel metadata; retain the installed Runtime or install Runtime 1.0.0-beta.18 separately for a fresh deployment.\n\nVerification: 484 tests, typecheck/build and tagged release preflight passed.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.39",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.38"
+  "version": "2.0.0-beta.39"
 }

@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.41-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.42-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "c54c67d5145c931dbff3dd308589a6d82de3ec8a51bab9239feece54e820c7dc",
-      "sizeBytes": 49964665,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.41/agentos-2.0.0-beta.41-darwin-arm64.tar.gz"
+      "sha256": "3720f0163364c3ef66b34b8d0c402db117b76ce55067f69900211379807e1799",
+      "sizeBytes": 49965947,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.41-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.42-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "8c4d432f678378ff323b52042032c29476adda22f7c512bbd95d2c3d96d11a95",
-      "sizeBytes": 57320081,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.41/agentos-2.0.0-beta.41-linux-arm64.tar.gz"
+      "sha256": "20c3fd967b40170da02b4e104eafbde88474927d3a8b003c7f70f477832e55f4",
+      "sizeBytes": 57322139,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.41-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.42-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "bd33f75a333286a2573b4129d202d4b785a946a6f366deb8f6370ae908af799b",
-      "sizeBytes": 57490404,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.41/agentos-2.0.0-beta.41-linux-x64.tar.gz"
+      "sha256": "af29f94346adaf0c81217acbc3ef167624c52bfa2086f58e00d10ad16473d060",
+      "sizeBytes": 57491073,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-10T09:36:07.504Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.41 / Runtime 1.0.0-beta.19\n\n- API-scoped attachment upload, metadata, list, download and delete; existing SDK protocol remains compatible.\n- Attachment reference protection for queued/running tasks, persistent deferred cleanup and unique managed paths for concurrent uploads with identical filenames.\n- Workspace reconciliation before turns/reuse with active-turn coordination and explicit conflict preservation.\n- Streaming Cube file transfers and reuse of unchanged staged files.\n- Codex asynchronous command and stdin completion updates the original tool state and retains complete output and nonzero exit status.\n\nDeletion protects files still referenced by an active task. Deferred sandbox cleanup retries automatically when the execution copy is available; arbitrary user-created copies are not managed attachments. Shared Agent workspaces are not per-request security isolation. Workspace reconciliation is not a continuous bidirectional mirror.\n\nCore targets: macOS arm64, Linux x64 and Linux arm64. Runtime targets: macOS arm64, Linux amd64/arm64 and Cube amd64/arm64. Linux Core compatibility floor: GLIBC 2.28.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.41",
+  "publishedAt": "2026-09-11T07:33:44.428Z",
+  "releaseNotes": "- Allows switching from an unreachable Cube provider to the built-in sandbox\n  without waiting for remote environment cleanup; unfinished Runs still block\n  switching to protect in-flight work\n- Commits the provider configuration before scheduling durable, retryable old\n  workspace cleanup, with restart recovery and safeguards against deleting\n  reactivated workspaces or replacing pending cleanup connection settings\n- Detaches idle execution handles locally and resumes conversations from the\n  latest durable workspace checkpoint; unsynchronized remote changes are not\n  silently treated as recovered\n- Reuses Runtime `1.0.0-beta.19`; no Runtime or sandbox template rebuild required\n\nOffline bundles in this Core-only release update Core and retain an already installed Runtime 1.0.0-beta.19. Runtime archives remain available from the separate Runtime release.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.42",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.41"
+  "version": "2.0.0-beta.42"
 }

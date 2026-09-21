@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.42-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.43-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "3720f0163364c3ef66b34b8d0c402db117b76ce55067f69900211379807e1799",
-      "sizeBytes": 49965947,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-darwin-arm64.tar.gz"
+      "sha256": "b54cf44335dd51e837e1f3092ba721605ad54e5ff0c8a3d1c1be2d5bfe34004b",
+      "sizeBytes": 49986573,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.43/agentos-2.0.0-beta.43-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.42-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.43-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "20c3fd967b40170da02b4e104eafbde88474927d3a8b003c7f70f477832e55f4",
-      "sizeBytes": 57322139,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-linux-arm64.tar.gz"
+      "sha256": "5380ca02b0e8b4c5bfe61c71adee8e35ebe07f2379146f3362b42f7acee711e5",
+      "sizeBytes": 58570426,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.43/agentos-2.0.0-beta.43-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.42-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.43-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "af29f94346adaf0c81217acbc3ef167624c52bfa2086f58e00d10ad16473d060",
-      "sizeBytes": 57491073,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.42/agentos-2.0.0-beta.42-linux-x64.tar.gz"
+      "sha256": "d11a306c15f091e440a9278403e2983c1e30c394852d94f152fe175b66c92e66",
+      "sizeBytes": 58781220,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.43/agentos-2.0.0-beta.43-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.19",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.19-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.20",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.20-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "eb130c4326870d4ffacaef3f3e70ad584da2053a6dce3f4283766a8898d27d7b",
-      "sizeBytes": 1170115224,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.19/agentos-sandbox-runtime-1.0.0-beta.19-darwin-arm64.tar.gz"
+      "sha256": "45ae3a4d6a7ff926d1b781d1792f592e602c932d508e7d5a5feabb2063ec04e3",
+      "sizeBytes": 996897802,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.20/agentos-sandbox-runtime-1.0.0-beta.20-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.19",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.19-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.20",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.20-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "7e84be7ec0b84c01daf08cb3c2587998f8d32900bb46d50d8074509203ed10fa",
-      "sizeBytes": 968535860,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.19/agentos-sandbox-runtime-1.0.0-beta.19-linux-amd64.tar.gz"
+      "sha256": "b378b6adc71e584c2ef8dba17efb97b08295ceaeb0e2167422c23a444424845d",
+      "sizeBytes": 990683476,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.20/agentos-sandbox-runtime-1.0.0-beta.20-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.19",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.19-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.20",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.20-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "b8e1736dbf4dca776889f8321840a21e8858f4a04b70e1dd523ed8e8e21fba38",
-      "sizeBytes": 959512738,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.19/agentos-sandbox-runtime-1.0.0-beta.19-linux-arm64.tar.gz"
+      "sha256": "8c921d82f0a46dff38385134e395a55544ce33047be3b7d61ba2727ebf588667",
+      "sizeBytes": 981553526,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.20/agentos-sandbox-runtime-1.0.0-beta.20-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-11T07:33:44.428Z",
-  "releaseNotes": "- Allows switching from an unreachable Cube provider to the built-in sandbox\n  without waiting for remote environment cleanup; unfinished Runs still block\n  switching to protect in-flight work\n- Commits the provider configuration before scheduling durable, retryable old\n  workspace cleanup, with restart recovery and safeguards against deleting\n  reactivated workspaces or replacing pending cleanup connection settings\n- Detaches idle execution handles locally and resumes conversations from the\n  latest durable workspace checkpoint; unsynchronized remote changes are not\n  silently treated as recovered\n- Reuses Runtime `1.0.0-beta.19`; no Runtime or sandbox template rebuild required\n\nOffline bundles in this Core-only release update Core and retain an already installed Runtime 1.0.0-beta.19. Runtime archives remain available from the separate Runtime release.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.42",
+  "publishedAt": "2026-09-21T08:04:05.876Z",
+  "releaseNotes": "- Separates sandbox residency, per-sandbox task concurrency, preparation and\n  cleanup limits, with API sublimits inside the shared system capacity\n- Preserves completed peers' workspace changes when another task fails to\n  start; awaits checkpoint completion before sandbox stop and blocks unsafe\n  hydration after a failed save, including across service restart\n- Bounds streaming buffers and coalesces persisted text updates; moves SQLite\n  checkpoints off the request thread and awaits worker exit during store close\n- Reconciles native Harness cancellation and shared-sandbox cleanup without\n  stopping other tasks or silently replaying failed operations\n- Uses Runtime `1.0.0-beta.20`, including the macOS VZ socket ownership fix and\n  preinstalled Python, pip and venv in local images; Node, Codex and OpenCode\n  remain prebuilt, and the local default remains 2 vCPUs / 2048 MiB\n- Retains provider-owned Cube base templates and materializes the matching\n  AgentOS runtime from the administrator-selected exact base template ID\n\n### Verification\n\n- Release source passed type checks, production build and all 706 tests;\n  final versioned artifact acceptance is required before upload\n- Local candidate passed real Codex/OpenCode Python execution, four sandboxes\n  with three tasks each, graceful shutdown, database integrity and restart\n  continuation with all checked workspace outputs preserved",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.43",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.42"
+  "version": "2.0.0-beta.43"
 }

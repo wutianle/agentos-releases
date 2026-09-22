@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.47-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.48-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "b1d26c7f1613f40052fbd9b3b33e321c8a5c74162f93fc7d88d6789c4c13c23b",
-      "sizeBytes": 50419629,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.47/agentos-2.0.0-beta.47-darwin-arm64.tar.gz"
+      "sha256": "5d821a87baa391cdb4dbdb763fb2b832b8c88838a808e524e37a3b092767fc2d",
+      "sizeBytes": 50420969,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.48/agentos-2.0.0-beta.48-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.47-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.48-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "550edbd046c45e643f83de58e28f69e84d3ed1955d46f4370d7bdc428618527b",
-      "sizeBytes": 59013194,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.47/agentos-2.0.0-beta.47-linux-arm64.tar.gz"
+      "sha256": "dff22df06e565039b2a13cf093107c41559bb4b1a8575c38d5a3458e1b108c99",
+      "sizeBytes": 59016328,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.48/agentos-2.0.0-beta.48-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.47-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.48-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "7caf03a7991f8ae2cc063f41186a91a402981bb90fa23ac1a8f35aebb71cf5b5",
-      "sizeBytes": 59217803,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.47/agentos-2.0.0-beta.47-linux-x64.tar.gz"
+      "sha256": "368c104a8cdaff59a455481f3a60db7979d7a4cdaad1709ad9dc9f7cfea3b19a",
+      "sizeBytes": 59219408,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.48/agentos-2.0.0-beta.48-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-22T09:38:11.364Z",
-  "releaseNotes": "AgentOS Core 2.0.0-beta.47 / Runtime 1.0.0-beta.23\n\n- 大工作空间改为分块传输并校验完整性，避免单次上传过大触发 Cube 413 错误\n- API、SDK 和平台对话统一使用任务专属临时目录；任务完成并安全保存后自动清理可丢弃文件\n- 保留原始附件、正式文件、对话记录、恢复所需内容，以及仍被结果引用的临时文件；失败任务保留七天诊断期\n- 不增加工作空间容量参数或手动归档操作；真实磁盘不足时明确报错并保留未保存的沙箱\n- Runtime 继续使用已发布的 beta.23，现有配置、模板和沙箱不因本次 Core 升级被删除或重建\n- 历史上未登记归属的 .tmp 不会被一刀切删除；磁盘物理容量仍然是实际边界",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.47",
+  "publishedAt": "2026-09-22T11:38:05.352Z",
+  "releaseNotes": "SQL discovery reliability update\n\n- Document SQL LIKE matching and schema/table filters for both Harnesses\n- Explain empty and truncated searches without inventing missing tables\n- Execute known read-only SQL directly; inspect unknown structures as needed\n- Preserve read-only enforcement, existing configuration, data and templates\n- Reuse Runtime 1.0.0-beta.23; no runtime download or template rebuild required for Core-only upgrades",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.48",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.47"
+  "version": "2.0.0-beta.48"
 }

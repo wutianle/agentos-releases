@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.45-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.46-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "2997069f97b0d914ef9ea84446c0cafd1835d6f3ea5190ce630a296762cdb471",
-      "sizeBytes": 49986401,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.45/agentos-2.0.0-beta.45-darwin-arm64.tar.gz"
+      "sha256": "b2922f1591432a2b643a96c593f43db6f044d4e20e1cd7672d1942d6fdde4c1a",
+      "sizeBytes": 50415805,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.46/agentos-2.0.0-beta.46-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.45-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.46-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "055f5b99d5aec7503f41929e29a55367d37a7b88f1c74fe2f101f8a08468c527",
-      "sizeBytes": 58571537,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.45/agentos-2.0.0-beta.45-linux-arm64.tar.gz"
+      "sha256": "302d51445bfd736e2fbc161b66517a95ded4b33416a656a5936a19ecf8c17805",
+      "sizeBytes": 59005972,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.46/agentos-2.0.0-beta.46-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.45-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.46-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "4eb412a9615d2be29a1e3442cfec5474845c7eb2cb6dfa42f9e21e67cb149975",
-      "sizeBytes": 58781622,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.45/agentos-2.0.0-beta.45-linux-x64.tar.gz"
+      "sha256": "9f9ec6add90f27d22fbd9ebb3b203bf6282846c045ce28934b757b46e2145670",
+      "sizeBytes": 59213657,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.46/agentos-2.0.0-beta.46-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.22",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.22-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.23",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.23-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "630a73c202c993e75b50a64d5de41682db5d7d89fa6281f980d602e3f16e3018",
-      "sizeBytes": 1013045927,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.22/agentos-sandbox-runtime-1.0.0-beta.22-darwin-arm64.tar.gz"
+      "sha256": "ae65795793046cab824a8629557ca7a1d1a010d0f9787a7de7e384b9d489b19f",
+      "sizeBytes": 1272101864,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.23/agentos-sandbox-runtime-1.0.0-beta.23-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.22",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.22-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.23",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.23-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "9bca078aae1fa6630647a2fd51f57617f32e27c604262c8d8b4222d38ac6812a",
-      "sizeBytes": 1007473877,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.22/agentos-sandbox-runtime-1.0.0-beta.22-linux-amd64.tar.gz"
+      "sha256": "cfb1ad47eac1d35227a932a3c6c3252e9dd02dd0c824b55e21c6e470e7f9c999",
+      "sizeBytes": 1268821484,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.23/agentos-sandbox-runtime-1.0.0-beta.23-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.22",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.22-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.23",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.23-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "5f7e2b7ec43457e86355de45c10f67019272aceb9591d0dccc6aaf94ecbc3e95",
-      "sizeBytes": 997700535,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.22/agentos-sandbox-runtime-1.0.0-beta.22-linux-arm64.tar.gz"
+      "sha256": "58d1d61d70e2d011f9a74d0b6e2888aeba2a7d215dcb3e6056854d6472653c90",
+      "sizeBytes": 1256706475,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.23/agentos-sandbox-runtime-1.0.0-beta.23-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-21T11:19:26.555Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.45 / Runtime 1.0.0-beta.22\n\n- Fixes chat Markdown overflow and keeps replies aligned with the composer across desktop and narrow layouts\n- Preinstalls pinned offline unzip and python-docx document tools in local and Cube runtime materializations\n- Verifies ZIP extraction and Word paragraph/table read-write operations during runtime construction and Cube canary validation\n- Keeps administrator-owned Cube base templates and saved configuration; derived AgentOS runtime templates are rebuilt for the new Runtime\n- No change to task concurrency settings, model configuration or Harness behavior",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.45",
+  "publishedAt": "2026-09-22T04:51:13.877Z",
+  "releaseNotes": "AgentOS Core 2.0.0-beta.46 / Runtime 1.0.0-beta.23\n\n- 修复内置 SQL 组件在正式安装包中的 `__dirname is not defined` 启动错误；构建时增加实际 SQL 启动与查询校验\n- 统一补充本地及 Cube 沙箱的离线 Word、Excel、PPT、PDF、图片处理、中文字体和文件检查依赖\n- 保留已有配置与 Cube 基础模板；通过新版 Runtime 重新生成 AgentOS 运行模板\n- 默认不包含 LibreOffice 和 OCR 引擎，不宣称 Excel 公式重算或模型图片输入链路已验证",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.46",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.45"
+  "version": "2.0.0-beta.46"
 }

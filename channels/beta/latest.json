@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.50-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.52-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "7b7b6a2aab844b6adcaef9d2c01ee175bc7366f95d93c71e874a444d1c3ef83c",
-      "sizeBytes": 50434542,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.50/agentos-2.0.0-beta.50-darwin-arm64.tar.gz"
+      "sha256": "85e1d726fbee19182ce2186bed8aecf021de3502f8632cf6833d249022aa2ca2",
+      "sizeBytes": 50435161,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.52/agentos-2.0.0-beta.52-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.50-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.52-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "c873278e118157291accd71f244d598f103fbccb875ce39b3274a178e04f3028",
-      "sizeBytes": 59090727,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.50/agentos-2.0.0-beta.50-linux-arm64.tar.gz"
+      "sha256": "b8f03fcb07d837692b245ae7a3c894f98e96cac2c4c05457af569c21923964c8",
+      "sizeBytes": 59092644,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.52/agentos-2.0.0-beta.52-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.50-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.52-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "a512138e804e9880cc8ea354fc206cc1882064339ac7ade08ded9b967123ac10",
-      "sizeBytes": 59289813,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.50/agentos-2.0.0-beta.50-linux-x64.tar.gz"
+      "sha256": "37e998143de0eb54a5fab32f1395970b9213de847a3f5911938b70efb5b87ecc",
+      "sizeBytes": 59290919,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.52/agentos-2.0.0-beta.52-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-23T09:53:33.512Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.50\n\n- Cube 空闲工作空间使用独立快照保存，释放原沙箱后优先从原生快照恢复\n- 快照创建、原沙箱删除采用持久化操作记录，服务重启后可继续核对未完成操作\n- 保留 AgentOS 工作文件和对话数据的权威地位，以及本地沙箱原生磁盘恢复\n- 减少重复文件传输和内容哈希，仍校验文件变化与未完成的保存操作\n- 回收缓存自动管理，不增加运维配置\n- 文件上传遇到时间戳变化时重新验证实际内容，避免纯属性变化误报；内容变化或文件被替换仍拒绝上传\n- Codex 或 OpenCode 原生会话丢失后，从 AgentOS 的持久化对话恢复上下文；查询超时等错误不再混同为新对话\n- 在选择工作空间并发组前清理已完成任务的临时文件，避免同工作空间任务被意外串行化\n- 安装器只操作目标安装目录所属服务，隔离安装不停止其他实例，也不覆盖共享 Runtime\n- 停服时先等待沙箱回收与失败核对结束，再关闭依赖的数据存储；保留原始错误，重复关闭调用共用同一次收尾\n- 继续使用 Runtime 1.0.0-beta.23，现有运行模板无需重建\n\n已知外部限制：Cube 快照及回收仍存在耗时波动和偶发 HTTP 408。AgentOS 会保留工作文件、对话和未完成回收记录；无法确认快照 READY 时保留源沙箱，后续自动核对。本版不宣称修复 Cube 内部快照或虚拟机超时",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.50",
+  "publishedAt": "2026-09-28T02:07:09.959Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.52\n\n兼容 Runtime 1.0.0-beta.23，本次不替换 Runtime 包\n\n- 修复同一轮多个命令等待审批时，后续审批或结果丢失、对话卡住的问题\n- 保留逐项批准、拒绝和停止的语义，不关闭审批或自动放行命令\n- 审批标识绑定当前操作批次，旧请求或重复点击不会批准后续命令\n- Cube 模板检查失败后，重新检查已经保存的准确模板 ID，避免重建仍然可用的模板\n- 保留同代运行模板身份，禁止把不同 Runtime 指纹的旧模板作为新模板复用\n- 明确提示旧 CubeShim 不支持 SnapshotCapture 的组件兼容问题\n\n本轮包含 beta.51 候选的模板修复；beta.51 未公开发布\n\n已通过类型检查、正式构建和 814 项自动测试。实机验证包括连续审批、拒绝、停止后恢复，以及新 Cube 模板的原生快照创建与恢复。模型回答的内容质量与工具实际执行结果分别判定",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.52",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.50"
+  "version": "2.0.0-beta.52"
 }

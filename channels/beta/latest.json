@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.53-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.54-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "5d1ab9b625e07c40d93fef6cbf7e3a7ecaa4ed0fb2ed7617f9efacef623dde91",
-      "sizeBytes": 50436091,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.53/agentos-2.0.0-beta.53-darwin-arm64.tar.gz"
+      "sha256": "5a3f2c27007efc156008198e1bdbd3bad2974e6afb79672e905e1e3a21fab2ca",
+      "sizeBytes": 50434207,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.53-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.54-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "d6adbc18b02979db693de2e1b2b44fbca8deb6b2e4ea00a0f36b3e252246f67e",
-      "sizeBytes": 59094399,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.53/agentos-2.0.0-beta.53-linux-arm64.tar.gz"
+      "sha256": "468ca00f357cc01013dd5f1a69310b9cad85946846a81310a4cd4362bf74be0d",
+      "sizeBytes": 59092737,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.53-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.54-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "4393fb6261aa8c552b8e566105c5e42483704ed0544ebe3c9abd73d7ee03dea6",
-      "sizeBytes": 59291357,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.53/agentos-2.0.0-beta.53-linux-x64.tar.gz"
+      "sha256": "49eef85c5523f85e5842c0104d501c917c1e885c646749851842db778a8cd382",
+      "sizeBytes": 59290789,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-28T07:12:35.632Z",
-  "releaseNotes": "## Core 2.0.0-beta.53 + Runtime 1.0.0-beta.24\n\n- 修复多张图片或较大模型上下文被 AgentOS 内部请求大小限制提前拦截的问题\n- Gateway、沙箱反向连接与 Core 模型转发统一采用 64 MiB 字节上限；不裁剪对话历史或图片\n- 超限请求明确返回错误，并区分 AgentOS 拦截与未归因的上游 413；管理接口和文件上传限制不变\n- Runtime 更新内置 Gateway，固定 Node 构建版本，升级后按新运行包重新生成运行模板\n- 保留配置、对话、工作空间文件及管理员选定的 Cube 基础模板\n\n验证：833 项自动化测试；原失败任务约 14 MB、4 张图片的真实 Cube 转发；Codex/OpenCode 执行与继续对话；正式安装包及受支持 Linux 基线验证",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.53",
+  "publishedAt": "2026-09-29T02:21:10.132Z",
+  "releaseNotes": "- Removes the standalone `TOOLS.md` editor, default content, configuration field,\n  and prompt assembly; Agents use `IDENTITY.md` and `AGENTS.md` for role rules\n- Resolves those role documents on every turn instead of replaying stale cached\n  instructions; clearing role documents also clears their derived instructions\n- Retains programmatic instructions and the platform-provided tool, memory,\n  SQL, MCP, workspace, and per-task temporary-file guidance for both Harnesses\n- Reuses Runtime `1.0.0-beta.24` and existing sandbox templates unchanged\n- Preserves existing model, Agent, API, sandbox, and concurrency configuration;\n  retired tool-document business notes are not automatically migrated",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.54",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.53"
+  "version": "2.0.0-beta.54"
 }

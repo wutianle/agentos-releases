@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.54-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.56-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "5a3f2c27007efc156008198e1bdbd3bad2974e6afb79672e905e1e3a21fab2ca",
-      "sizeBytes": 50434207,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-darwin-arm64.tar.gz"
+      "sha256": "b3b2fe927458867563b7946e19cd8013b582bdafbab8f54a69c1b5fef8234beb",
+      "sizeBytes": 50377629,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.54-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.56-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "468ca00f357cc01013dd5f1a69310b9cad85946846a81310a4cd4362bf74be0d",
-      "sizeBytes": 59092737,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-linux-arm64.tar.gz"
+      "sha256": "c08351b1fc25f2aee8c732b83e4bb31b8414fc6f3ce29f70122e35821911375f",
+      "sizeBytes": 59039497,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.54-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.56-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "49eef85c5523f85e5842c0104d501c917c1e885c646749851842db778a8cd382",
-      "sizeBytes": 59290789,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.54/agentos-2.0.0-beta.54-linux-x64.tar.gz"
+      "sha256": "c7c6190980095fd230ce069dedbcbcf8c31b34edd3705eff97bc16c3b3316f6c",
+      "sizeBytes": 59239135,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.24",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.24-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.25",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "c1aaa20fae14f8abba1fcf6b1a9bbb17caa8c467cf0939ba3327aa7a5e3bc713",
-      "sizeBytes": 1272087510,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.24/agentos-sandbox-runtime-1.0.0-beta.24-darwin-arm64.tar.gz"
+      "sha256": "4f6b1c9e17f909eb9a4d552e7ff5454dfd75788da6f6d56a7029c4ec4f408bc8",
+      "sizeBytes": 1323468961,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.24",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.24-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.25",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "8b78fb2c0046959bf671a8ecd9a3aa5f8cb1857a6d26030bf0df356a2d04287a",
-      "sizeBytes": 1268813004,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.24/agentos-sandbox-runtime-1.0.0-beta.24-linux-amd64.tar.gz"
+      "sha256": "e42ae035b96edea1f869a44bae95d7ad044c80fc7e08282f4151d93d35c77d44",
+      "sizeBytes": 1319011002,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.24",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.24-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.25",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "c42258241f6a4adcc679689e8cb1fcc860e80fa20ad267ef36510cc010354544",
-      "sizeBytes": 1256726442,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.24/agentos-sandbox-runtime-1.0.0-beta.24-linux-arm64.tar.gz"
+      "sha256": "c837e8345def3ad561eefd19fcfa43732fc7fab3efe08692dc39a46e7f57cc35",
+      "sizeBytes": 1308075393,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-29T02:21:10.132Z",
-  "releaseNotes": "- Removes the standalone `TOOLS.md` editor, default content, configuration field,\n  and prompt assembly; Agents use `IDENTITY.md` and `AGENTS.md` for role rules\n- Resolves those role documents on every turn instead of replaying stale cached\n  instructions; clearing role documents also clears their derived instructions\n- Retains programmatic instructions and the platform-provided tool, memory,\n  SQL, MCP, workspace, and per-task temporary-file guidance for both Harnesses\n- Reuses Runtime `1.0.0-beta.24` and existing sandbox templates unchanged\n- Preserves existing model, Agent, API, sandbox, and concurrency configuration;\n  retired tool-document business notes are not automatically migrated",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.54",
+  "publishedAt": "2026-09-29T15:05:05.973Z",
+  "releaseNotes": "# AgentOS Core 2.0.0-beta.56 / Runtime 1.0.0-beta.25\n\n- 升级 AI SDK 与 Harness 集成，Codex 改用官方 app-server 适配链路，减少平台自维护的重复实现\n- Codex、OpenCode 均保留模型图片输入：支持直接上传、工作空间现有图片及文件解压产生的图片；模型必须实际支持图片输入\n- 修复启动就绪检测过急的问题：在原有总期限内允许健康服务完成启动，不提前重启仍在启动的服务\n- 保持工具结果、审批续接、角色指令和对话恢复行为一致\n- 统一 Agent 设置页标题、描述、操作区及卡片间距\n- Runtime beta.25 包含更新后的 Harness 运行环境；升级会使用匹配的派生运行模板，管理员提供的 Cube 基础模板保持不变\n- 修复 macOS 升级时旧服务退出较慢导致的注册失败：完成保存并退出后再替换文件；超出既有关闭期限则明确中止，不强杀、不覆盖原文件\n- 保留现有配置、对话和工作文件；不更改服务器网络配置或并发参数\n\nCube 服务自身的内部连接及快照回收超时仍可能发生，本版本不宣称已修复 Cube 服务端问题",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.56",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.54"
+  "version": "2.0.0-beta.56"
 }

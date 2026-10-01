@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.56-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.58-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "b3b2fe927458867563b7946e19cd8013b582bdafbab8f54a69c1b5fef8234beb",
-      "sizeBytes": 50377629,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-darwin-arm64.tar.gz"
-    },
-    {
-      "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.56-linux-arm64.tar.gz",
-      "kind": "core",
-      "platform": "linux",
-      "sha256": "c08351b1fc25f2aee8c732b83e4bb31b8414fc6f3ce29f70122e35821911375f",
-      "sizeBytes": 59039497,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-linux-arm64.tar.gz"
+      "sha256": "07887c0ce36a3c13d3b6fdb5af99134dbd6760f0efd3f195ea003a633fa64e03",
+      "sizeBytes": 50393902,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.58/agentos-2.0.0-beta.58-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.56-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.58-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "c7c6190980095fd230ce069dedbcbcf8c31b34edd3705eff97bc16c3b3316f6c",
-      "sizeBytes": 59239135,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.56/agentos-2.0.0-beta.56-linux-x64.tar.gz"
+      "sha256": "fc0d801b47986e4d68907d0b3d5d26a15a44d6861600de4a43af7a5c2d2c25ee",
+      "sizeBytes": 59252953,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.58/agentos-2.0.0-beta.58-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.25",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.58-linux-arm64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "ed5e236f49a2dde3d58ced7470d3e036217c73f05c07144357a9cdc0f575e421",
+      "sizeBytes": 59050785,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.58/agentos-2.0.0-beta.58-linux-arm64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.26",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "4f6b1c9e17f909eb9a4d552e7ff5454dfd75788da6f6d56a7029c4ec4f408bc8",
-      "sizeBytes": 1323468961,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-darwin-arm64.tar.gz"
+      "sha256": "48e2d415ef1ce9ecee4cd3a240ff2ec9cc34596e441a181b9e9be36f7e44d4b9",
+      "sizeBytes": 1459156748,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.25",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.26",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "e42ae035b96edea1f869a44bae95d7ad044c80fc7e08282f4151d93d35c77d44",
-      "sizeBytes": 1319011002,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-linux-amd64.tar.gz"
+      "sha256": "cf09d1f5febeeec4efca284bb45e4f2b5f65c6cf71aad22528414977158d91a0",
+      "sizeBytes": 1319024171,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.25",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.25-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.26",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "c837e8345def3ad561eefd19fcfa43732fc7fab3efe08692dc39a46e7f57cc35",
-      "sizeBytes": 1308075393,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.25/agentos-sandbox-runtime-1.0.0-beta.25-linux-arm64.tar.gz"
+      "sha256": "08797c920e05a07f70d8921ae450f247492b5c6437e9d17bb068a006e45ca304",
+      "sizeBytes": 1308081306,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-09-29T15:05:05.973Z",
-  "releaseNotes": "# AgentOS Core 2.0.0-beta.56 / Runtime 1.0.0-beta.25\n\n- 升级 AI SDK 与 Harness 集成，Codex 改用官方 app-server 适配链路，减少平台自维护的重复实现\n- Codex、OpenCode 均保留模型图片输入：支持直接上传、工作空间现有图片及文件解压产生的图片；模型必须实际支持图片输入\n- 修复启动就绪检测过急的问题：在原有总期限内允许健康服务完成启动，不提前重启仍在启动的服务\n- 保持工具结果、审批续接、角色指令和对话恢复行为一致\n- 统一 Agent 设置页标题、描述、操作区及卡片间距\n- Runtime beta.25 包含更新后的 Harness 运行环境；升级会使用匹配的派生运行模板，管理员提供的 Cube 基础模板保持不变\n- 修复 macOS 升级时旧服务退出较慢导致的注册失败：完成保存并退出后再替换文件；超出既有关闭期限则明确中止，不强杀、不覆盖原文件\n- 保留现有配置、对话和工作文件；不更改服务器网络配置或并发参数\n\nCube 服务自身的内部连接及快照回收超时仍可能发生，本版本不宣称已修复 Cube 服务端问题",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.56",
+  "publishedAt": "2026-10-01T10:10:26.504Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.58\n\n- Preserves the full published API JSON Schema through persistence, extraction,\n  AI SDK structured output, and final validation, including nested array items,\n  required properties, numeric enums, references, and additional constraints\n- Displays output fields as a shared settings schema tree with consistent row\n  spacing and source typography; renaming and deleting ordinary properties\n  update the original Schema and keep surviving source bindings intact\n- Connects SQL data sources only when a tool is called; connection failures are\n  delivered to both Harnesses as tool errors without aborting the conversation,\n  while read-only execution and credential invalidation remain enforced\n- Loads paginated conversation summaries without reading complete histories,\n  retaining title, search, visibility, and message-count semantics\n- Includes the local beta.57 Codex workspace-image fix and portable workspace\n  filename handling, preserving formal files and surfacing checkpoint failures\n- Pins matching Runtime `1.0.0-beta.26`; the local platform continues to reuse\n  its exact verified Runtime identity, and existing configuration and data remain\n  outside immutable Core release directories\n\nBuild source: `83a3c51b4496b1da0618819925b98c5fedf42dd8` (`v2.0.0-beta.58`)\n\nThis beta release retains existing configuration, conversations and workspace\ndata. Host 49 is not upgraded in this release task. Provider-side Cube retirement\nlimitations are not claimed as fixed by this release.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.58",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.56"
+  "version": "2.0.0-beta.58"
 }

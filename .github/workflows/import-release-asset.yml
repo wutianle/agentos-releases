@@ -44,8 +44,19 @@ jobs:
       - name: Upload verified asset
         env:
           ASSET_NAME: ${{ inputs.asset_name }}
+          EXPECTED_SHA256: ${{ inputs.sha256 }}
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.release_tag }}
-        run: >-
-          gh release upload "$RELEASE_TAG" "$ASSET_NAME" --clobber
-          --repo "$GITHUB_REPOSITORY"
+        run: |
+          set -euo pipefail
+          release_id=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json databaseId --jq .databaseId)
+          existing=$(gh api "repos/$GITHUB_REPOSITORY/releases/$release_id/assets" \
+            | jq -c --arg name "$ASSET_NAME" '.[] | select(.name == $name)')
+          if [[ -n "$existing" ]]; then
+            test "$(jq -r .state <<< "$existing")" = uploaded
+            test "$(jq -r .digest <<< "$existing")" = "sha256:$EXPECTED_SHA256"
+            test "$(jq -r .size <<< "$existing")" = "$(stat -c %s "$ASSET_NAME")"
+            echo "Exact accepted asset already exists; no overwrite"
+            exit 0
+          fi
+          gh release upload "$RELEASE_TAG" "$ASSET_NAME" --repo "$GITHUB_REPOSITORY"

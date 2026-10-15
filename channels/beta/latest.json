@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.61-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.62-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "64081fa5042150ab8bb3646f973d31ef24da47b2bae7387c72510544afb8a42a",
-      "sizeBytes": 50540893,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.61/agentos-2.0.0-beta.61-darwin-arm64.tar.gz"
+      "sha256": "a1b2e902cce942ee8453970dd16ae21a25f95f51aea3e141eb8c0268853534f6",
+      "sizeBytes": 50540782,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.61-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.62-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "ae08c598dfe7563b1afa2a2be751ac81b418f861796b9e0d4a982b65d66d12b6",
-      "sizeBytes": 59394096,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.61/agentos-2.0.0-beta.61-linux-x64.tar.gz"
+      "sha256": "6c9366b4debcb0d29f8855f106b39d45323d3827c5849da8144318a85b16d079",
+      "sizeBytes": 59394019,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.61-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.62-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "d92e4d7dcda99f5865b4fe6a51bc1164b85e05665e35b5ee3d422f808f01d481",
-      "sizeBytes": 59197883,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.61/agentos-2.0.0-beta.61-linux-arm64.tar.gz"
+      "sha256": "36d976cb10d19a50d2aab3619b7a8e7327d7c7894aadaa2f2d59445a6f2d27a9",
+      "sizeBytes": 59197532,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-15T02:16:39.020Z",
-  "releaseNotes": "# AgentOS 2.0.0-beta.61\n\n## 本次更新\n\n- 回调支持固定 Token、自定义请求头、账号密码，以及自动获取 Token 的应用认证和单步登录；与调用 AgentOS 的接入 Token 相互独立\n- 回调凭据加密保存；支持有效期管理、401 后一次刷新、失败重试及重启续送，不会因回调失败重新执行 Agent\n- 调用记录分别展示任务执行和回调交付状态；配置页面延续系统设置风格，支持认证检查和明确确认后的测试回调\n- 修复附件上传中断时不完整文件落库，以及超大模型请求过早关闭连接的问题；附件容量和模型传输限制分别管理\n- 包含此前 beta.59、beta.60 的统一 Token 管理、Skills 包管理和权限简化；从 beta.58 或更早版本升级时，旧接入凭据不再兼容，需要创建新 Token 并替换外部调用配置\n\n## 运行环境与升级\n\n- Core：2.0.0-beta.61\n- 复用 Runtime：1.0.0-beta.26，不重新构建未变化的运行环境\n- 保留已有配置、模型凭据、对话、附件、Skills 和持久工作空间\n- 提供 macOS Apple Silicon、Linux x64、Linux ARM64 的正式安装包和离线安装包\n- Linux Core 的最低兼容基线为 GLIBC 2.28，两种架构均经原生构建、最终包扫描和安装启动验证\n\n这是测试通道版本，公开更新通道在全部引用资产校验完成后切换。",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.61",
+  "publishedAt": "2026-10-15T03:26:59.859Z",
+  "releaseNotes": "# AgentOS 2.0.0-beta.62\n\n- 支持直接通过远程浏览器首次创建管理员，不再要求服务器本机浏览器或 SSH 端口转发\n- 保留单一管理员的原子创建、跨站与来源检查、密码要求、哈希存储和会话保护；已经初始化的账号不能被覆盖\n- 请在服务部署后及时完成首次设置，未初始化前限制不可信人员访问\n- 复用 Runtime 1.0.0-beta.26，不重建沙箱运行环境；保留已有账号、接入 Token、配置、对话、附件、Skills 和工作空间\n\n提供 macOS Apple Silicon、Linux x64 和 Linux ARM64 正式安装包及离线包，Linux Core 最低支持 GLIBC 2.28。",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.62",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.61"
+  "version": "2.0.0-beta.62"
 }

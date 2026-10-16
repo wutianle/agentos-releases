@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.64-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.65-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "1743255dcebca14f7df3560a9305ca49116311ab1fa7e508a3856a7185ba6593",
-      "sizeBytes": 50548281,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-darwin-arm64.tar.gz"
+      "sha256": "ad4dd6e524aa29723a2ea7c328c1cacead97edca7a320a13a11cf2578994fe54",
+      "sizeBytes": 50550304,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.64-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.65-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "53c822f101fd9a9643ec90775eeb4b141c1732bede0c2c21032a6a04af4ed0c4",
-      "sizeBytes": 59406101,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-linux-x64.tar.gz"
+      "sha256": "7508c8fb88f5e5fc0ba9346f213abc280913463429be0a0bb4318ad4e0502262",
+      "sizeBytes": 59408082,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.64-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.65-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e18feb43cddd5fb06769f1205aa9a8679f701adf2c3747c98f70f72f1423ab06",
-      "sizeBytes": 59206047,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-linux-arm64.tar.gz"
+      "sha256": "10f08771be2b88c400bdd3fd99e0353f5fdd664d96f89405d22836e6b06cd71f",
+      "sizeBytes": 59206676,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-16T01:24:16.630Z",
-  "releaseNotes": "- Adds standard AI SDK source and file parts to conversation and published API\n  responses while preserving existing text, segments, events and business results\n- Displays compact source references with direct HTTP(S) originals, safe MCP\n  resource icons, document filenames and a lightweight notice for private sources\n- Keeps the source footer name-only, without a heading count or per-row numbers;\n  inline citations retain their small numbered markers\n- Unifies search, page-open and page-find activity rows across Codex and OpenCode,\n  with truthful execution states, original targets and single-line truncation\n- Bounds public source metadata before validation, preserves ordinary author\n  query parameters while rejecting credential-bearing links, and retains text\n  when legacy message segments contain only sources\n- Aligns TypeScript SDK source-icon types with Core and shares citation URI\n  normalization without introducing new runtime dependencies\n- Reuses Runtime `1.0.0-beta.26`; configuration, credentials, conversations,\n  attachments, Skills and durable workspace data remain outside Core releases",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.64",
+  "publishedAt": "2026-10-16T09:34:32.687Z",
+  "releaseNotes": "## AgentOS Core 2.0.0-beta.65\n\n- Adds per-Agent MCP tool permissions for both Codex and OpenCode\n- Uses Skills-style service groups with individual tool selection and tri-state\n  parent checkboxes; the title, count, whitespace and arrow only expand/collapse\n- Saves explicit tool names, so new tools are not automatically authorized\n- Preserves immutable permissions in existing conversations; Agent edits apply\n  to new conversations, and globally disabled MCP services remain blocked\n- Retains old whole-service bindings until explicitly narrowed and safely\n  handles removed tools and cross-service name collisions\n- Reuses AgentOS Runtime 1.0.0-beta.26 without rebuilding sandbox templates\n- Preserves configuration, credentials, conversations, attachments, Skills and\n  durable workspace files when upgrading\n\nValidation: 1,286 passing tests with one existing platform-specific skip before\nrelease versioning, two rounds of real Codex/OpenCode read/write permission\nchecks, and real-browser mouse/keyboard, light/dark and narrow-screen checks",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.65",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.64"
+  "version": "2.0.0-beta.65"
 }

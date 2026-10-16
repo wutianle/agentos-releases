@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.62-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.64-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "a1b2e902cce942ee8453970dd16ae21a25f95f51aea3e141eb8c0268853534f6",
-      "sizeBytes": 50540782,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-darwin-arm64.tar.gz"
+      "sha256": "1743255dcebca14f7df3560a9305ca49116311ab1fa7e508a3856a7185ba6593",
+      "sizeBytes": 50548281,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.62-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.64-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "6c9366b4debcb0d29f8855f106b39d45323d3827c5849da8144318a85b16d079",
-      "sizeBytes": 59394019,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-linux-x64.tar.gz"
+      "sha256": "53c822f101fd9a9643ec90775eeb4b141c1732bede0c2c21032a6a04af4ed0c4",
+      "sizeBytes": 59406101,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.62-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.64-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "36d976cb10d19a50d2aab3619b7a8e7327d7c7894aadaa2f2d59445a6f2d27a9",
-      "sizeBytes": 59197532,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.62/agentos-2.0.0-beta.62-linux-arm64.tar.gz"
+      "sha256": "e18feb43cddd5fb06769f1205aa9a8679f701adf2c3747c98f70f72f1423ab06",
+      "sizeBytes": 59206047,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.64/agentos-2.0.0-beta.64-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-15T03:26:59.859Z",
-  "releaseNotes": "# AgentOS 2.0.0-beta.62\n\n- 支持直接通过远程浏览器首次创建管理员，不再要求服务器本机浏览器或 SSH 端口转发\n- 保留单一管理员的原子创建、跨站与来源检查、密码要求、哈希存储和会话保护；已经初始化的账号不能被覆盖\n- 请在服务部署后及时完成首次设置，未初始化前限制不可信人员访问\n- 复用 Runtime 1.0.0-beta.26，不重建沙箱运行环境；保留已有账号、接入 Token、配置、对话、附件、Skills 和工作空间\n\n提供 macOS Apple Silicon、Linux x64 和 Linux ARM64 正式安装包及离线包，Linux Core 最低支持 GLIBC 2.28。",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.62",
+  "publishedAt": "2026-10-16T01:24:16.630Z",
+  "releaseNotes": "- Adds standard AI SDK source and file parts to conversation and published API\n  responses while preserving existing text, segments, events and business results\n- Displays compact source references with direct HTTP(S) originals, safe MCP\n  resource icons, document filenames and a lightweight notice for private sources\n- Keeps the source footer name-only, without a heading count or per-row numbers;\n  inline citations retain their small numbered markers\n- Unifies search, page-open and page-find activity rows across Codex and OpenCode,\n  with truthful execution states, original targets and single-line truncation\n- Bounds public source metadata before validation, preserves ordinary author\n  query parameters while rejecting credential-bearing links, and retains text\n  when legacy message segments contain only sources\n- Aligns TypeScript SDK source-icon types with Core and shares citation URI\n  normalization without introducing new runtime dependencies\n- Reuses Runtime `1.0.0-beta.26`; configuration, credentials, conversations,\n  attachments, Skills and durable workspace data remain outside Core releases",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.64",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.62"
+  "version": "2.0.0-beta.64"
 }

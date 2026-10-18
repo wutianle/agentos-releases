@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.65-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.67-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "ad4dd6e524aa29723a2ea7c328c1cacead97edca7a320a13a11cf2578994fe54",
-      "sizeBytes": 50550304,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-darwin-arm64.tar.gz"
+      "sha256": "95a197f3942f5b9816e479c719a4d9be90400fbcb53441d814d30e3743ae55ac",
+      "sizeBytes": 50551442,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.65-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.67-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "7508c8fb88f5e5fc0ba9346f213abc280913463429be0a0bb4318ad4e0502262",
-      "sizeBytes": 59408082,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-linux-x64.tar.gz"
+      "sha256": "5c030a6ef4d24c03728567f29b67e3d811850ad96b5da63f930cc2e1b7caedc8",
+      "sizeBytes": 59408936,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.65-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.67-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "10f08771be2b88c400bdd3fd99e0353f5fdd664d96f89405d22836e6b06cd71f",
-      "sizeBytes": 59206676,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.65/agentos-2.0.0-beta.65-linux-arm64.tar.gz"
+      "sha256": "812699c7809c7ec6e5b56fda3d713a2d32d9d8be9cf3723384ef31c507a1a41b",
+      "sizeBytes": 59207311,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.26",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.28",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "48e2d415ef1ce9ecee4cd3a240ff2ec9cc34596e441a181b9e9be36f7e44d4b9",
-      "sizeBytes": 1459156748,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-darwin-arm64.tar.gz"
+      "sha256": "99a35086bacbf743f7be03ed4e7a5123e60141f1b2bcc765b6d0f4ddc4738f97",
+      "sizeBytes": 1323609466,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.26",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.28",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "cf09d1f5febeeec4efca284bb45e4f2b5f65c6cf71aad22528414977158d91a0",
-      "sizeBytes": 1319024171,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-linux-amd64.tar.gz"
+      "sha256": "ed6b4c7856437d122a56f9ea4e8b1167aee677e2cedbe0c965d45fdf3cc59e25",
+      "sizeBytes": 1319015981,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.26",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.26-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.28",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "08797c920e05a07f70d8921ae450f247492b5c6437e9d17bb068a006e45ca304",
-      "sizeBytes": 1308081306,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.26/agentos-sandbox-runtime-1.0.0-beta.26-linux-arm64.tar.gz"
+      "sha256": "862376086f2f38bddda331c5e76b21c685c3e5e128e189db2c4eba0d4bf2f07c",
+      "sizeBytes": 1308169874,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-16T09:34:32.687Z",
-  "releaseNotes": "## AgentOS Core 2.0.0-beta.65\n\n- Adds per-Agent MCP tool permissions for both Codex and OpenCode\n- Uses Skills-style service groups with individual tool selection and tri-state\n  parent checkboxes; the title, count, whitespace and arrow only expand/collapse\n- Saves explicit tool names, so new tools are not automatically authorized\n- Preserves immutable permissions in existing conversations; Agent edits apply\n  to new conversations, and globally disabled MCP services remain blocked\n- Retains old whole-service bindings until explicitly narrowed and safely\n  handles removed tools and cross-service name collisions\n- Reuses AgentOS Runtime 1.0.0-beta.26 without rebuilding sandbox templates\n- Preserves configuration, credentials, conversations, attachments, Skills and\n  durable workspace files when upgrading\n\nValidation: 1,286 passing tests with one existing platform-specific skip before\nrelease versioning, two rounds of real Codex/OpenCode read/write permission\nchecks, and real-browser mouse/keyboard, light/dark and narrow-screen checks",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.65",
+  "publishedAt": "2026-10-18T02:23:10.219Z",
+  "releaseNotes": "# AgentOS Core 2.0.0-beta.67\n\n- Restores Codex native Todo planning after the Codex CLI update, for new and resumed conversations\n- Uses the AI SDK dynamic tool-event contract for native plans without adding a second executor or changing approvals\n- Preserves complete long plans in streaming events and reloaded conversation history\n- Fixes same-turn progress recovery, explicit plan clearing and failed-clear visibility\n- Keeps long Todo lists within the viewport with internal scrolling, keyboard dismissal and consistent light/dark themes\n- Prevents garbage collection from prematurely cancelling streamed model responses, retaining backpressure, cancellation and error propagation\n- Uses AgentOS Runtime 1.0.0-beta.28 with the corrected Codex bridge and model Gateway; Codex/OpenCode CLI pins and document dependencies remain unchanged\n- Retains configuration, credentials, conversations, attachments, Skills and durable workspaces\n\nSource: `af9fb399936400394c302231b67ac3cea9adead5`\n\nCore: macOS arm64, Linux x64 and Linux arm64 (GLIBC 2.28+)\nRuntime: macOS arm64, Linux amd64/arm64, Cube Linux amd64/arm64\n\nThis is a beta release",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.67",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.65"
+  "version": "2.0.0-beta.67"
 }

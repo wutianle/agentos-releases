@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.67-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.68-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "95a197f3942f5b9816e479c719a4d9be90400fbcb53441d814d30e3743ae55ac",
-      "sizeBytes": 50551442,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-darwin-arm64.tar.gz"
+      "sha256": "a3bfe0d532132580f8e343f43c10e8d5db9767564e92be4c2ccfc6ce2009d9fe",
+      "sizeBytes": 50567044,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.67-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.68-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "5c030a6ef4d24c03728567f29b67e3d811850ad96b5da63f930cc2e1b7caedc8",
-      "sizeBytes": 59408936,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-linux-x64.tar.gz"
+      "sha256": "28d9bda6a8f07d7538e3d22d0be3d67a077dcfeb837df5f67ce87434c96831b8",
+      "sizeBytes": 59420272,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.67-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.68-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "812699c7809c7ec6e5b56fda3d713a2d32d9d8be9cf3723384ef31c507a1a41b",
-      "sizeBytes": 59207311,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.67/agentos-2.0.0-beta.67-linux-arm64.tar.gz"
+      "sha256": "3c61bb1c28577bad8cb7ddfc74d66df5eea6e77dc3a2bb8c705c6b94b7832153",
+      "sizeBytes": 59224998,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-18T02:23:10.219Z",
-  "releaseNotes": "# AgentOS Core 2.0.0-beta.67\n\n- Restores Codex native Todo planning after the Codex CLI update, for new and resumed conversations\n- Uses the AI SDK dynamic tool-event contract for native plans without adding a second executor or changing approvals\n- Preserves complete long plans in streaming events and reloaded conversation history\n- Fixes same-turn progress recovery, explicit plan clearing and failed-clear visibility\n- Keeps long Todo lists within the viewport with internal scrolling, keyboard dismissal and consistent light/dark themes\n- Prevents garbage collection from prematurely cancelling streamed model responses, retaining backpressure, cancellation and error propagation\n- Uses AgentOS Runtime 1.0.0-beta.28 with the corrected Codex bridge and model Gateway; Codex/OpenCode CLI pins and document dependencies remain unchanged\n- Retains configuration, credentials, conversations, attachments, Skills and durable workspaces\n\nSource: `af9fb399936400394c302231b67ac3cea9adead5`\n\nCore: macOS arm64, Linux x64 and Linux arm64 (GLIBC 2.28+)\nRuntime: macOS arm64, Linux amd64/arm64, Cube Linux amd64/arm64\n\nThis is a beta release",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.67",
+  "publishedAt": "2026-10-18T09:02:11.950Z",
+  "releaseNotes": "# AgentOS Core 2.0.0-beta.68\n\n- Adds permanent Agent deletion with durable cleanup plans and safe retries; IDs can be reused only after complete cleanup\n- Removes deleted Agents from API and Token candidates, and prevents old files, grants, callbacks and queued operations from reaching a recreated Agent\n- Provides explicit cleanup for legacy soft-deleted records; installation never automatically deletes historical Agent data\n- Coordinates sandbox maintenance, API configuration and shutdown with deletion, while preserving shared models, SQL, MCP and global Skills\n- Falls back to GitHub's official release-asset API when direct downloads fail, retaining signed manifests, checksums and safe resumable installer downloads\n- Supports an optional persistent Cube IPv4/CIDR egress allowlist for new sandboxes, with empty-list parsing corrected and existing network configuration retained\n- Reuses AgentOS Runtime 1.0.0-beta.28; no template rebuild is required\n\nSource: `346f2e1d1e410ba549a497b6e92400150f21a9be`\n\nCore: macOS arm64, Linux x64 and Linux arm64 (GLIBC 2.28+)\n\nThis is a beta release",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.68",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.67"
+  "version": "2.0.0-beta.68"
 }

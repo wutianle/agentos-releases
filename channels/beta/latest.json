@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.68-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.69-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "a3bfe0d532132580f8e343f43c10e8d5db9767564e92be4c2ccfc6ce2009d9fe",
-      "sizeBytes": 50567044,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-darwin-arm64.tar.gz"
+      "sha256": "6b9a80ecd7f0db7192f1ebae2ef57c5a71d080f54b01f95a8e9ca826bdded65e",
+      "sizeBytes": 50572223,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.68-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.69-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "28d9bda6a8f07d7538e3d22d0be3d67a077dcfeb837df5f67ce87434c96831b8",
-      "sizeBytes": 59420272,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-linux-x64.tar.gz"
+      "sha256": "261a33d695008098e8133d7845ddd81afdbc73b3c86d83c57cc0c2cce1f33fc4",
+      "sizeBytes": 59426864,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.68-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.69-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "3c61bb1c28577bad8cb7ddfc74d66df5eea6e77dc3a2bb8c705c6b94b7832153",
-      "sizeBytes": 59224998,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.68/agentos-2.0.0-beta.68-linux-arm64.tar.gz"
+      "sha256": "c6b4d7727ff73222f6df8666d235a243ec55b8801196b9ba8e69350decf57aeb",
+      "sizeBytes": 59229270,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-18T09:02:11.950Z",
-  "releaseNotes": "# AgentOS Core 2.0.0-beta.68\n\n- Adds permanent Agent deletion with durable cleanup plans and safe retries; IDs can be reused only after complete cleanup\n- Removes deleted Agents from API and Token candidates, and prevents old files, grants, callbacks and queued operations from reaching a recreated Agent\n- Provides explicit cleanup for legacy soft-deleted records; installation never automatically deletes historical Agent data\n- Coordinates sandbox maintenance, API configuration and shutdown with deletion, while preserving shared models, SQL, MCP and global Skills\n- Falls back to GitHub's official release-asset API when direct downloads fail, retaining signed manifests, checksums and safe resumable installer downloads\n- Supports an optional persistent Cube IPv4/CIDR egress allowlist for new sandboxes, with empty-list parsing corrected and existing network configuration retained\n- Reuses AgentOS Runtime 1.0.0-beta.28; no template rebuild is required\n\nSource: `346f2e1d1e410ba549a497b6e92400150f21a9be`\n\nCore: macOS arm64, Linux x64 and Linux arm64 (GLIBC 2.28+)\n\nThis is a beta release",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.68",
+  "publishedAt": "2026-10-19T03:31:23.553Z",
+  "releaseNotes": "- Discovers nested Skill entries and imports multi-Skill archives without\n  restructuring packages, preserving relative references, scripts and assets\n- Tracks physical package ownership separately from Skill names, with\n  independent entry activation and complete-package replacement and export\n- Keeps package deletion atomic and rejects partial nested-entry deletion that\n  could break shared resources; archive safety checks and rollback remain\n- Gives Codex and OpenCode the same resolved native catalog while staging\n  complete source packages outside native discovery, avoiding duplicate entries\n- Preserves shared and private workspace checkpointing, binary resources and\n  executable scripts, without modifying global originals\n- Displays package-relative entry paths in the existing Skills settings rows\n  without adding import or delete controls to the management page\n- Reuses Runtime `1.0.0-beta.28`; no template rebuild is required, and existing\n  configuration, conversations, attachments and durable workspace data remain",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.69",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.68"
+  "version": "2.0.0-beta.69"
 }

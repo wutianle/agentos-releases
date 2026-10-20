@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.69-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.70-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "6b9a80ecd7f0db7192f1ebae2ef57c5a71d080f54b01f95a8e9ca826bdded65e",
-      "sizeBytes": 50572223,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-darwin-arm64.tar.gz"
+      "sha256": "0d0bd61fe601b817e48a9cbf9d0d4758eb555dc5da0880a9ce365bac6b82af0f",
+      "sizeBytes": 50572470,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.69-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.70-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "261a33d695008098e8133d7845ddd81afdbc73b3c86d83c57cc0c2cce1f33fc4",
-      "sizeBytes": 59426864,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-linux-x64.tar.gz"
+      "sha256": "6737cc4d0fc3563f7b701198173ea2995e7f3ce71d0ca83245cd663c6696a5ec",
+      "sizeBytes": 59575039,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.69-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.70-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "c6b4d7727ff73222f6df8666d235a243ec55b8801196b9ba8e69350decf57aeb",
-      "sizeBytes": 59229270,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.69/agentos-2.0.0-beta.69-linux-arm64.tar.gz"
+      "sha256": "e4eb559a0b5923062d6e135c44cae8a793b49e8c21cc085ef64f38c6c248dd69",
+      "sizeBytes": 59383351,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-19T03:31:23.553Z",
-  "releaseNotes": "- Discovers nested Skill entries and imports multi-Skill archives without\n  restructuring packages, preserving relative references, scripts and assets\n- Tracks physical package ownership separately from Skill names, with\n  independent entry activation and complete-package replacement and export\n- Keeps package deletion atomic and rejects partial nested-entry deletion that\n  could break shared resources; archive safety checks and rollback remain\n- Gives Codex and OpenCode the same resolved native catalog while staging\n  complete source packages outside native discovery, avoiding duplicate entries\n- Preserves shared and private workspace checkpointing, binary resources and\n  executable scripts, without modifying global originals\n- Displays package-relative entry paths in the existing Skills settings rows\n  without adding import or delete controls to the management page\n- Reuses Runtime `1.0.0-beta.28`; no template rebuild is required, and existing\n  configuration, conversations, attachments and durable workspace data remain",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.69",
+  "publishedAt": "2026-10-20T09:46:14.228Z",
+  "releaseNotes": "- Publishes citations only when a safe HTTP(S) original entry is supplied,\n  consistently across live streams, historical replay, SDKs and API callbacks\n- Keeps internal resource locators and documents without an original entry in\n  tool provenance rather than presenting them as clickable reference sources\n- Displays each inline citation as its source title or filename plus a stable\n  number, with bounded long titles and full names in the source list\n- Preserves ordinary Markdown labels, tool output and durable history while\n  filtering old references without changing event cursors or callback results\n- Cleans optional source metadata independently so a malformed excerpt or state\n  cannot hide an otherwise valid original link\n- Reuses Runtime `1.0.0-beta.28`; no sandbox template rebuild is required, and\n  existing configuration, conversations, attachments and workspace data remain",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.70",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.69"
+  "version": "2.0.0-beta.70"
 }

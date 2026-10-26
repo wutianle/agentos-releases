@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.70-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.71-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "0d0bd61fe601b817e48a9cbf9d0d4758eb555dc5da0880a9ce365bac6b82af0f",
-      "sizeBytes": 50572470,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-darwin-arm64.tar.gz"
+      "sha256": "656071ea715e5c388da160a2ea87b6836e20ba314c054fec4d53dde515d5947e",
+      "sizeBytes": 50572309,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.70-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.71-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "6737cc4d0fc3563f7b701198173ea2995e7f3ce71d0ca83245cd663c6696a5ec",
-      "sizeBytes": 59575039,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-linux-x64.tar.gz"
+      "sha256": "b55c60d052f5053a5f0cddbecc2912512f6c748e1eb04fafc421667a2925740a",
+      "sizeBytes": 59427022,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.70-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.71-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e4eb559a0b5923062d6e135c44cae8a793b49e8c21cc085ef64f38c6c248dd69",
-      "sizeBytes": 59383351,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.70/agentos-2.0.0-beta.70-linux-arm64.tar.gz"
+      "sha256": "0ec6bbeae948ca294d3d2a727d7b0e40f53c09629927e8a7ad2b38b7309239e6",
+      "sizeBytes": 59228481,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-20T09:46:14.228Z",
-  "releaseNotes": "- Publishes citations only when a safe HTTP(S) original entry is supplied,\n  consistently across live streams, historical replay, SDKs and API callbacks\n- Keeps internal resource locators and documents without an original entry in\n  tool provenance rather than presenting them as clickable reference sources\n- Displays each inline citation as its source title or filename plus a stable\n  number, with bounded long titles and full names in the source list\n- Preserves ordinary Markdown labels, tool output and durable history while\n  filtering old references without changing event cursors or callback results\n- Cleans optional source metadata independently so a malformed excerpt or state\n  cannot hide an otherwise valid original link\n- Reuses Runtime `1.0.0-beta.28`; no sandbox template rebuild is required, and\n  existing configuration, conversations, attachments and workspace data remain",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.70",
+  "publishedAt": "2026-10-26T07:11:25.408Z",
+  "releaseNotes": "- Fixes adding API input and return fields over private-network HTTP without\n  requiring the secure-context-only `crypto.randomUUID()` browser API\n- Keeps imported JSON Schema fields editable in the form while preserving\n  existing field identities, source mappings, enums and array constraints\n- Adds browser-resolved regressions for both field-add handlers when\n  `randomUUID` is unavailable\n- Reuses Runtime `1.0.0-beta.28`; no sandbox template rebuild or configuration\n  migration is required",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.71",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.70"
+  "version": "2.0.0-beta.71"
 }

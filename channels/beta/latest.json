@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.71-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.72-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "656071ea715e5c388da160a2ea87b6836e20ba314c054fec4d53dde515d5947e",
-      "sizeBytes": 50572309,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-darwin-arm64.tar.gz"
+      "sha256": "fc54f97667c9342264aa1253c748334dc101b896ec406d0ef5be6648f6a8eb71",
+      "sizeBytes": 50633707,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.72/agentos-2.0.0-beta.72-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.71-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.72-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "b55c60d052f5053a5f0cddbecc2912512f6c748e1eb04fafc421667a2925740a",
-      "sizeBytes": 59427022,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-linux-x64.tar.gz"
+      "sha256": "20395dfb26dbfd4ea63ecf4b4506cf199917d833340254e4174f74878b111654",
+      "sizeBytes": 59490996,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.72/agentos-2.0.0-beta.72-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.71-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.72-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "0ec6bbeae948ca294d3d2a727d7b0e40f53c09629927e8a7ad2b38b7309239e6",
-      "sizeBytes": 59228481,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.71/agentos-2.0.0-beta.71-linux-arm64.tar.gz"
+      "sha256": "81033f88d56ac1f8c485b6df238395ee3170c521d7dd338ae92fc389c1494f36",
+      "sizeBytes": 59296987,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.72/agentos-2.0.0-beta.72-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.28",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.29",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.29-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "99a35086bacbf743f7be03ed4e7a5123e60141f1b2bcc765b6d0f4ddc4738f97",
-      "sizeBytes": 1323609466,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-darwin-arm64.tar.gz"
+      "sha256": "3d5a27e2cbd277beb7b5aa2396bf798bebebba39938d351a87101229020f85ac",
+      "sizeBytes": 1392232309,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.29/agentos-sandbox-runtime-1.0.0-beta.29-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.28",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.29",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.29-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "ed6b4c7856437d122a56f9ea4e8b1167aee677e2cedbe0c965d45fdf3cc59e25",
-      "sizeBytes": 1319015981,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-linux-amd64.tar.gz"
+      "sha256": "63b5bab17c7db25650d2625bbb2466bded707af3e3bc1173cf916ae1bbdba53b",
+      "sizeBytes": 1390244759,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.29/agentos-sandbox-runtime-1.0.0-beta.29-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.28",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.28-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.29",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.29-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "862376086f2f38bddda331c5e76b21c685c3e5e128e189db2c4eba0d4bf2f07c",
-      "sizeBytes": 1308169874,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.28/agentos-sandbox-runtime-1.0.0-beta.28-linux-arm64.tar.gz"
+      "sha256": "d4249870f67b6d42ca01875202e6c3b5aa3194344d337a8ae685d3ccfa02e1a2",
+      "sizeBytes": 1376832049,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.29/agentos-sandbox-runtime-1.0.0-beta.29-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-26T07:11:25.408Z",
-  "releaseNotes": "- Fixes adding API input and return fields over private-network HTTP without\n  requiring the secure-context-only `crypto.randomUUID()` browser API\n- Keeps imported JSON Schema fields editable in the form while preserving\n  existing field identities, source mappings, enums and array constraints\n- Adds browser-resolved regressions for both field-add handlers when\n  `randomUUID` is unavailable\n- Reuses Runtime `1.0.0-beta.28`; no sandbox template rebuild or configuration\n  migration is required",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.71",
+  "publishedAt": "2026-10-28T10:26:29.831Z",
+  "releaseNotes": "AgentOS Core 2.0.0-beta.72\n\n- Updates AI SDK and the official Codex/OpenCode Harness integrations, retaining\n  native execution, approvals, Skills, image inputs and existing SDK behavior\n- Recovers oversized model requests through native context compaction, bounds\n  compaction requests themselves and preserves role instructions and workspace\n  side effects when continuing\n- Adds optional interactive questions to Web, TypeScript and Java 8 SDKs, with\n  durable answers, refresh/reconnect recovery and continuation of the same Run\n- Preserves pending native questions and model access across orderly Core\n  restarts and long waits, while revoking access when a Run ends or is stopped\n- Clears submitted question cards when the saved answer is acknowledged, and\n  adds consistent hover and keyboard-focus feedback to answer options\n- Keeps active model streams running beyond three minutes, applying the timeout\n  to response inactivity and propagating interrupted streams as errors\n- Validates streamed protocol termination before conversion so incomplete or\n  truncated streams cannot be reported as successful completed answers\n- Removes explicitly discarded native retry fragments from the final answer,\n  with compatible assistant-step text snapshots for live Web and SDK updates\n- Rejects tool calls, empty output and incomplete responses during dedicated\n  context-summary operations, preventing old answers from being reused as new\n  summaries\n- Activates updated managed Runtime processes during upgrades, preserving\n  ordinary Core-only restarts and handling older supervisors through a complete\n  service restart before accepting work\n- Uses Runtime `1.0.0-beta.29` for updated CLI, bridge, Gateway and guest stream\n  handling; preserves configuration, conversations, attachments, Skills and\n  durable workspaces during upgrade\n\nManaged installations activate updates through a complete service restart when needed. For a foreground CLI deployment without a service manager, restart `agentos start` after the first supervisor-protocol upgrade.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.72",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.71"
+  "version": "2.0.0-beta.72"
 }

@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.74-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.75-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "8b55dfbce78be71c452d588bfba6ddf1c889ac69d7572325813b41cb5e724edf",
-      "sizeBytes": 50640159,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.74/agentos-2.0.0-beta.74-darwin-arm64.tar.gz"
+      "sha256": "921c747314a05834b1283d410a0d3efc7ed14bde79e2f86c0b2a6a4610923d89",
+      "sizeBytes": 50645195,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.74-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.75-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "45acb60bb2f9a4119e9a79e62ba4178262b70fbf51fca66b729737796ea4dba0",
-      "sizeBytes": 59689630,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.74/agentos-2.0.0-beta.74-linux-x64.tar.gz"
+      "sha256": "12798979c9b8dc53768be9a04938de7b53be7be38b8702b70465a908008955fe",
+      "sizeBytes": 59693283,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.74-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.75-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "7f0ab841d55245cada1f2f7888b324bfaf071e405c2c5f2350ed4b561655bad9",
-      "sizeBytes": 59491087,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.74/agentos-2.0.0-beta.74-linux-arm64.tar.gz"
+      "sha256": "a731b1e4a3ddbbf954aeb70b11d17e6360e76513a2af1dddc2ce1177eb0d2159",
+      "sizeBytes": 59495419,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.30",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.30-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.31",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "811a04caf19f13deb2ab1bb8e9103dec3a135a33282a1cb692e9102863663acc",
-      "sizeBytes": 1392221824,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.30/agentos-sandbox-runtime-1.0.0-beta.30-darwin-arm64.tar.gz"
+      "sha256": "ecedeb9063b181c9135e35a9ebd98cece98598663128a16bc7cd1d59f02f0546",
+      "sizeBytes": 1392417053,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.30",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.30-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.31",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "75bfddb1aea453bc3840eb8626f601bebe4e0d37006d9ec09dd686cf01823810",
-      "sizeBytes": 1390251173,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.30/agentos-sandbox-runtime-1.0.0-beta.30-linux-amd64.tar.gz"
+      "sha256": "4edd2d3da025ea745764a7ba6e89d7ca04898e616f244056f7c456ce13290aa6",
+      "sizeBytes": 1390408088,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.30",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.30-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.31",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "ef396a31df256ac580e70a5af36e68e70ac349440da9fada33e01b01e3b7b1d5",
-      "sizeBytes": 1376861946,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.30/agentos-sandbox-runtime-1.0.0-beta.30-linux-arm64.tar.gz"
+      "sha256": "553854f1df822f8ebea8a24834a458770c400e34cd978dd95917ef663b197a7e",
+      "sizeBytes": 1377012822,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-29T03:35:46.880Z",
-  "releaseNotes": "SDK 交互提问支持超时自动跳过并继续原任务，默认等待 5 分钟，可按消息调整。截止时间和已接收答案持久化，支持刷新、重连及重启恢复；迟到回答不会覆盖已处理结果。\n\n自动跳过后不再反复等待，最多处理 3 批自动跳过；持续提问会明确结束本轮，原会话可继续发送新消息。普通 API 保持非交互，Web 等待策略保留。\n\n修复 OpenCode 拒答导致原生执行中断，配套 Runtime 1.0.0-beta.30。TypeScript、Java 8 SDK 同步增加超时与截止时间字段。升级保留配置、对话、附件、Skills 和工作空间数据。",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.74",
+  "publishedAt": "2026-10-30T04:00:01.894Z",
+  "releaseNotes": "# AgentOS 2.0.0-beta.75\n\n- Leaves model-response waiting deadlines and request retries to the native\n  Codex and OpenCode Harnesses, removing earlier default relay and model-only\n  HTTP inactivity cutoffs while retaining explicit cancellation and strict\n  incomplete-response detection\n- Preserves the same Run and completed tools during native model-request\n  recovery, without replaying the whole task\n- Persists normalized model waiting and retry activity for the Web product and\n  additive TypeScript and Java SDK status fields, including refresh and\n  reconnect recovery; request diagnostics remain outside public message streams\n- Selects an available model-relay WebSocket port when a template process\n  already uses the preferred port, without terminating that unrelated process\n- Captures bounded, redacted model-relay startup diagnostics before a failed\n  execution copy is removed instead of returning an empty startup error\n- Uses Runtime `1.0.0-beta.31` for the matching Gateway and native retry bridges;\n  preserves existing configuration, conversations, attachments, Skills and\n  durable workspaces during upgrade",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.75",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.74"
+  "version": "2.0.0-beta.75"
 }

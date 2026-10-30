@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.75-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.76-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "921c747314a05834b1283d410a0d3efc7ed14bde79e2f86c0b2a6a4610923d89",
-      "sizeBytes": 50645195,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-darwin-arm64.tar.gz"
+      "sha256": "08701262187351735d757f86fd541b7a662548740557e45db62b54a0a4ee9a95",
+      "sizeBytes": 50681734,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.75-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.76-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "12798979c9b8dc53768be9a04938de7b53be7be38b8702b70465a908008955fe",
-      "sizeBytes": 59693283,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-linux-x64.tar.gz"
+      "sha256": "9dcdfd2af5935aacb7eff3a55d17fa780ef5d4966795c5050292779ba544a8ed",
+      "sizeBytes": 59728706,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.75-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.76-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "a731b1e4a3ddbbf954aeb70b11d17e6360e76513a2af1dddc2ce1177eb0d2159",
-      "sizeBytes": 59495419,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.75/agentos-2.0.0-beta.75-linux-arm64.tar.gz"
+      "sha256": "9336858962b042fba1d0e0f9a1fedd99b843916e5a926aef0acdd63f536ac992",
+      "sizeBytes": 59534157,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-30T04:00:01.894Z",
-  "releaseNotes": "# AgentOS 2.0.0-beta.75\n\n- Leaves model-response waiting deadlines and request retries to the native\n  Codex and OpenCode Harnesses, removing earlier default relay and model-only\n  HTTP inactivity cutoffs while retaining explicit cancellation and strict\n  incomplete-response detection\n- Preserves the same Run and completed tools during native model-request\n  recovery, without replaying the whole task\n- Persists normalized model waiting and retry activity for the Web product and\n  additive TypeScript and Java SDK status fields, including refresh and\n  reconnect recovery; request diagnostics remain outside public message streams\n- Selects an available model-relay WebSocket port when a template process\n  already uses the preferred port, without terminating that unrelated process\n- Captures bounded, redacted model-relay startup diagnostics before a failed\n  execution copy is removed instead of returning an empty startup error\n- Uses Runtime `1.0.0-beta.31` for the matching Gateway and native retry bridges;\n  preserves existing configuration, conversations, attachments, Skills and\n  durable workspaces during upgrade",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.75",
+  "publishedAt": "2026-10-30T09:42:52.780Z",
+  "releaseNotes": "# AgentOS 2.0.0-beta.76\n\n- Uses the JSON Schema library for draft-aware schema navigation and local\n  reference resolution in the published API result-field editor\n- Allows editing locally referenced fields without changing shared definitions\n  or other uses, and retains original constraints and source bindings\n- Presents nullability separately from required-property rules; existing Schema\n  required lists are preserved, and new result properties are required by default\n- Unifies imported and manually created fields, including array element types,\n  nested properties, sibling and child additions, renaming and deletion\n- Protects unsupported reference and composition constraints from unsafe visual\n  edits and prevents incompatible type changes to enumerated or constant values\n- Reuses Runtime `1.0.0-beta.31`; existing sandbox templates remain unchanged",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.76",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.75"
+  "version": "2.0.0-beta.76"
 }

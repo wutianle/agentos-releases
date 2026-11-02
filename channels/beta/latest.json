@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.76-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.77-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "08701262187351735d757f86fd541b7a662548740557e45db62b54a0a4ee9a95",
-      "sizeBytes": 50681734,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-darwin-arm64.tar.gz"
+      "sha256": "1f4df9ce93c012c139d9ade16168de70de36b39924d6a5aa9adb917516430b11",
+      "sizeBytes": 50683261,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.76-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.77-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "9dcdfd2af5935aacb7eff3a55d17fa780ef5d4966795c5050292779ba544a8ed",
-      "sizeBytes": 59728706,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-linux-x64.tar.gz"
+      "sha256": "268d8cbf36e24aa10845c474d15a756868fddafd1296114848ee3285f7e936eb",
+      "sizeBytes": 59729153,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.76-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.77-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "9336858962b042fba1d0e0f9a1fedd99b843916e5a926aef0acdd63f536ac992",
-      "sizeBytes": 59534157,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.76/agentos-2.0.0-beta.76-linux-arm64.tar.gz"
+      "sha256": "97c240342176ba4ea8358b9245babc3c4a45eaea398623d7b58db0b752b6a920",
+      "sizeBytes": 59535681,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-30T09:42:52.780Z",
-  "releaseNotes": "# AgentOS 2.0.0-beta.76\n\n- Uses the JSON Schema library for draft-aware schema navigation and local\n  reference resolution in the published API result-field editor\n- Allows editing locally referenced fields without changing shared definitions\n  or other uses, and retains original constraints and source bindings\n- Presents nullability separately from required-property rules; existing Schema\n  required lists are preserved, and new result properties are required by default\n- Unifies imported and manually created fields, including array element types,\n  nested properties, sibling and child additions, renaming and deletion\n- Protects unsupported reference and composition constraints from unsafe visual\n  edits and prevents incompatible type changes to enumerated or constant values\n- Reuses Runtime `1.0.0-beta.31`; existing sandbox templates remain unchanged",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.76",
+  "publishedAt": "2026-10-30T11:28:32.176Z",
+  "releaseNotes": "- Uses one Schema editor for published API input and result fields, including\n  nested objects, array children, local references, sibling additions and deletion;\n  input fields omit the result-source column\n- Exposes independent required-property and nullable-value controls for input and\n  result fields, preserving the imported Schema constraints and creation defaults\n- Enforces the complete saved input Schema at invocation with the existing shared\n  validator; previously ignored enum, array-item, additional-property and nullable\n  rules now apply, with input failures reported before agent execution\n- Keeps input identities, result-source bindings and message-template variables\n  synchronized during field and parent renames, and rejects deletion of inputs\n  still referenced by the configuration\n- Generates request example structure through the existing Schema library rather\n  than a flat field projection; actual values must satisfy the configured constraints\n- Aligns field headers and controls with shared column widths and adapts to the\n  editor's available width, including expanded navigation and narrow screens\n- Reuses Runtime `1.0.0-beta.31`; existing sandbox templates remain unchanged",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.77",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.76"
+  "version": "2.0.0-beta.77"
 }

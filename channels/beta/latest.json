@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.77-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.78-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "1f4df9ce93c012c139d9ade16168de70de36b39924d6a5aa9adb917516430b11",
-      "sizeBytes": 50683261,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-darwin-arm64.tar.gz"
+      "sha256": "a9c0f72aa446f6e4fdd84d2042aafefa8213ae629a4b89930f58994a667a14a7",
+      "sizeBytes": 50684991,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.78/agentos-2.0.0-beta.78-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.77-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.78-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "268d8cbf36e24aa10845c474d15a756868fddafd1296114848ee3285f7e936eb",
-      "sizeBytes": 59729153,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-linux-x64.tar.gz"
+      "sha256": "71abd1c40dbd3fce124bbc9d3272140fc2a25a34399a5c5d0158f0d8b6b32048",
+      "sizeBytes": 59731074,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.78/agentos-2.0.0-beta.78-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.77-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.78-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "97c240342176ba4ea8358b9245babc3c4a45eaea398623d7b58db0b752b6a920",
-      "sizeBytes": 59535681,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.77/agentos-2.0.0-beta.77-linux-arm64.tar.gz"
+      "sha256": "eb65a5c56193ca5c4ab132eba7d233a372943d8f42aa903f2260a92e02a15b25",
+      "sizeBytes": 59538545,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.78/agentos-2.0.0-beta.78-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-10-30T11:28:32.176Z",
-  "releaseNotes": "- Uses one Schema editor for published API input and result fields, including\n  nested objects, array children, local references, sibling additions and deletion;\n  input fields omit the result-source column\n- Exposes independent required-property and nullable-value controls for input and\n  result fields, preserving the imported Schema constraints and creation defaults\n- Enforces the complete saved input Schema at invocation with the existing shared\n  validator; previously ignored enum, array-item, additional-property and nullable\n  rules now apply, with input failures reported before agent execution\n- Keeps input identities, result-source bindings and message-template variables\n  synchronized during field and parent renames, and rejects deletion of inputs\n  still referenced by the configuration\n- Generates request example structure through the existing Schema library rather\n  than a flat field projection; actual values must satisfy the configured constraints\n- Aligns field headers and controls with shared column widths and adapts to the\n  editor's available width, including expanded navigation and narrow screens\n- Reuses Runtime `1.0.0-beta.31`; existing sandbox templates remain unchanged",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.77",
+  "publishedAt": "2026-11-02T02:43:24.993Z",
+  "releaseNotes": "- Refines the shared API input and result Schema editor with compact aligned\n  columns, consistent field actions and responsive nested-field layouts\n- Shows required and nullable status beside field names, with independent edits\n  in field settings and preserved imported references, constraints and bindings\n- Adds display-only invocation, complete result-query and callback examples,\n  generated from the current form with success and failure variants\n- Documents optional attachment and source parts together with task metadata;\n  examples do not invoke tasks, send callbacks or change the external protocol\n- Reuses Runtime `1.0.0-beta.31`; sandbox templates, configuration and user data\n  remain unchanged",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.78",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.77"
+  "version": "2.0.0-beta.78"
 }

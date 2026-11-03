@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.80-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.81-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "a2ace7b15926a097942c0eeebb45447de9576e7922b4561120b9073216ac3817",
-      "sizeBytes": 50686574,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-darwin-arm64.tar.gz"
+      "sha256": "b528a63935238ccc28bfed5c9b42d39469283ae953ad63eef9e640f09360345d",
+      "sizeBytes": 50688023,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.81/agentos-2.0.0-beta.81-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.80-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.81-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "6cb5e37411b1999883c4f897873036898ed7feed7aa46180165ca3870dae9055",
-      "sizeBytes": 59735885,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-linux-x64.tar.gz"
+      "sha256": "1c3cfaefd8f40b5e98b17842f6f804e75dd0d3530656baf95c6ad4df11ab4d95",
+      "sizeBytes": 59736473,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.81/agentos-2.0.0-beta.81-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.80-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.81-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "d3aeef6f7b75a1273086b1d3e00e019e17d54e5bbef03929f372bcf80c56fb27",
-      "sizeBytes": 59541997,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-linux-arm64.tar.gz"
+      "sha256": "7ca04309b58564b3e56952b91dee7c33f937036f5848035aef3bc85e664067bc",
+      "sizeBytes": 59542614,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.81/agentos-2.0.0-beta.81-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-03T02:50:46.143Z",
-  "releaseNotes": "- Adds optional HTTPS Python and JavaScript package sources for sandbox tasks, with offline Harness bootstrap kept separate\n- Lets OpenCode task shells use the configured package source for explicit installs\n- Ships `antiword` and Pandoc in the general-purpose Runtime `1.0.0-beta.32` and verifies legacy Chinese Word and ZIP files\n- Displays unconfirmed shell results separately from confirmed successes in live and historical conversations",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.80",
+  "publishedAt": "2026-11-03T05:59:00.903Z",
+  "releaseNotes": "- Prevents nonportable files in platform-managed temporary directories from blocking durable workspace saves\n- Retries recoverable workspace save errors on the existing sandbox without running the model again\n- Explains save failures and pending recovery separately from incomplete replies\n- Reuses Runtime `1.0.0-beta.32` and existing sandbox templates",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.81",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.80"
+  "version": "2.0.0-beta.81"
 }

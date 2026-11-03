@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.79-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.80-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "bdc244c50247bd07a0eecb8939180554b8996f0e3473e0c90f2c78ac6bb2d62f",
-      "sizeBytes": 50685342,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.79/agentos-2.0.0-beta.79-darwin-arm64.tar.gz"
+      "sha256": "a2ace7b15926a097942c0eeebb45447de9576e7922b4561120b9073216ac3817",
+      "sizeBytes": 50686574,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.79-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.80-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "482d269338acab839ba57b5ca10f636e63136a61c1dcd6ef4a5897dbf5749fc2",
-      "sizeBytes": 59733959,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.79/agentos-2.0.0-beta.79-linux-x64.tar.gz"
+      "sha256": "6cb5e37411b1999883c4f897873036898ed7feed7aa46180165ca3870dae9055",
+      "sizeBytes": 59735885,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.79-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.80-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "11a5de0acc6003092d404fcd777513d0a3ef4a8e40c4eb9a69c818894ef73827",
-      "sizeBytes": 59539659,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.79/agentos-2.0.0-beta.79-linux-arm64.tar.gz"
+      "sha256": "d3aeef6f7b75a1273086b1d3e00e019e17d54e5bbef03929f372bcf80c56fb27",
+      "sizeBytes": 59541997,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.80/agentos-2.0.0-beta.80-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.31",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.32",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.32-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "ecedeb9063b181c9135e35a9ebd98cece98598663128a16bc7cd1d59f02f0546",
-      "sizeBytes": 1392417053,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-darwin-arm64.tar.gz"
+      "sha256": "e2911fe30d787241a0980f933b6f7cb7d821883cc7f349d769120b6417620c22",
+      "sizeBytes": 1442061826,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.32/agentos-sandbox-runtime-1.0.0-beta.32-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.31",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.32",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.32-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "4edd2d3da025ea745764a7ba6e89d7ca04898e616f244056f7c456ce13290aa6",
-      "sizeBytes": 1390408088,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-linux-amd64.tar.gz"
+      "sha256": "9f5a4dbfe2b96248e02b1e2e79604ef6ed069ae7b4a08ecc354a45e17d561ff6",
+      "sizeBytes": 1425607779,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.32/agentos-sandbox-runtime-1.0.0-beta.32-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.31",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.31-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.32",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.32-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "553854f1df822f8ebea8a24834a458770c400e34cd978dd95917ef663b197a7e",
-      "sizeBytes": 1377012822,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.31/agentos-sandbox-runtime-1.0.0-beta.31-linux-arm64.tar.gz"
+      "sha256": "23aa657ef8e517dc3d9ccbbddcf5d3ab788741efeb19392d0c4569df3976e27d",
+      "sizeBytes": 1426701736,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.32/agentos-sandbox-runtime-1.0.0-beta.32-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-02T10:02:00.343Z",
-  "releaseNotes": "- Shows enum and fixed-value summaries in the shared API input and result Schema editor\n- Adds typed scalar enum creation, editing, value deletion and constraint removal through existing settings controls\n- Preserves required and nullable rules, original Schema constraints, shared definitions and independent array-element enums\n- Keeps fixed values and unsupported complex enums visible with the complete JSON Schema editing path\n- Reuses Runtime `1.0.0-beta.31`; existing configuration, conversations, attachments, Skills and sandbox templates are preserved",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.79",
+  "publishedAt": "2026-11-03T02:50:46.143Z",
+  "releaseNotes": "- Adds optional HTTPS Python and JavaScript package sources for sandbox tasks, with offline Harness bootstrap kept separate\n- Lets OpenCode task shells use the configured package source for explicit installs\n- Ships `antiword` and Pandoc in the general-purpose Runtime `1.0.0-beta.32` and verifies legacy Chinese Word and ZIP files\n- Displays unconfirmed shell results separately from confirmed successes in live and historical conversations",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.80",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.79"
+  "version": "2.0.0-beta.80"
 }

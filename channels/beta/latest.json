@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.82-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.83-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "6a50fddf855ead22f40ea935b4c9adc0a6917ed669728ad5f82dd54006a03d59",
-      "sizeBytes": 50691938,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.82/agentos-2.0.0-beta.82-darwin-arm64.tar.gz"
+      "sha256": "ca806492f3b09995c6efcc7d07e3af2a111ef0e3bcb46f49f8862689a4065dc6",
+      "sizeBytes": 50700335,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.83/agentos-2.0.0-beta.83-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.0-beta.82-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.83-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "f5f6a2c531116dbbb7f5a449901ea544814c00638f7f97a2507257be8f00b01c",
-      "sizeBytes": 59741101,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.82/agentos-2.0.0-beta.82-linux-x64.tar.gz"
+      "sha256": "4f33fb0218dafaf4547e28c9e4b9e93c3a596ccea485af350b9aa2c9efd85090",
+      "sizeBytes": 59752470,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.83/agentos-2.0.0-beta.83-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.0-beta.82-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.0-beta.83-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "191c391145331da2e5a06451941bd15875e159bc885cbef22187223da18b9cfb",
-      "sizeBytes": 59549656,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.82/agentos-2.0.0-beta.82-linux-arm64.tar.gz"
+      "sha256": "22a44836240d06050149c1da17bba459bcd38e59035a0275f57bb6c8b03da621",
+      "sizeBytes": 59554390,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0-beta.83/agentos-2.0.0-beta.83-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.33",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.33-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.34",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.34-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "eefdcc261424ae086f30cc0f5f9218b00ec5956a3b5e41c961754769681c2a4a",
-      "sizeBytes": 1442097075,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.33/agentos-sandbox-runtime-1.0.0-beta.33-darwin-arm64.tar.gz"
+      "sha256": "bc3aaa0f998671354f2da34eedf5965d0db0d2eaff034a937dc130597848c8ec",
+      "sizeBytes": 1442108358,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.34/agentos-sandbox-runtime-1.0.0-beta.34-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0-beta.33",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.33-linux-amd64.tar.gz",
+      "componentVersion": "1.0.0-beta.34",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.34-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "09a93483aa84d983f6bbdeae25d380574fc7b45116af7ea955d5480d1e3f7d34",
-      "sizeBytes": 1425600212,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.33/agentos-sandbox-runtime-1.0.0-beta.33-linux-amd64.tar.gz"
+      "sha256": "092aeadc1a24e37b59126884919874df2e12305c79b49888791aec3c44212b30",
+      "sizeBytes": 1425591062,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.34/agentos-sandbox-runtime-1.0.0-beta.34-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0-beta.33",
-      "fileName": "agentos-sandbox-runtime-1.0.0-beta.33-linux-arm64.tar.gz",
+      "componentVersion": "1.0.0-beta.34",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.34-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "a4bd64d855b169b63c3c1159eae7377ab6a51165aed3bb4618442f51cdb09ca4",
-      "sizeBytes": 1426727032,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.33/agentos-sandbox-runtime-1.0.0-beta.33-linux-arm64.tar.gz"
+      "sha256": "9bb9393e7807d2268f3666fd0e040a47a0f59927ca6986f659e6985db02591cb",
+      "sizeBytes": 1426727742,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0-beta.34/agentos-sandbox-runtime-1.0.0-beta.34-linux-arm64.tar.gz"
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-05T11:42:14.277Z",
-  "releaseNotes": "- Rejects truncated or inconsistent upstream model completions before protocol conversion so native Harness retry can recover\n- Preserves explicit Codex message phases and continues an intermediate-only stop once in the same session without replaying the original request\n- Returns background command invocation results promptly without reporting an unconfirmed process exit as success\n- Covers finite sandbox response-body reads with the request deadline and propagates cancellation through artifact publication\n- Adds bounded, privacy-safe terminal diagnostics without storing model content or credentials\n- Ships compatible Runtime `1.0.0-beta.33` with the updated Gateway and Codex bridge; preserves configuration, conversations, attachments and Skills",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.82",
+  "publishedAt": "2026-11-05T13:39:30.537Z",
+  "releaseNotes": "- Makes the official Node npm and npx commands available on the default PATH in Built-in and Cube sandboxes\n- Verifies offline package installation and executable launch when validating Runtime environments\n- Records actual per-request upstream token usage, route attribution and bounded raw usage in host-only structured logs\n- Preserves reported zero values and partial or missing usage without estimates, and retains late request diagnostics without reopening completed Runs\n- Ships compatible Runtime `1.0.0-beta.34`; keeps the UI and public SDK unchanged and preserves configuration, conversations, attachments and Skills",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0-beta.83",
   "schemaVersion": 1,
-  "version": "2.0.0-beta.82"
+  "version": "2.0.0-beta.83"
 }

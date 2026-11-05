@@ -1,5 +1,5 @@
 {
   "algorithm": "Ed25519",
   "keyId": "agentos-release-2026",
-  "signature": "wpXI6jktbccPoGMidpfP2Zxf+FMeoOo7yJVY5obuB06+EcqlfmtFkOlibY4Znq+BzYi4lFJZGeivXRh7s51iAQ=="
+  "signature": "RCrXA5EMFCvG6KLEPpryI7rj1D5qTyGxwjcje1YDIanNTOW5rT5RrKMFDgq1v6WHl4tOMXY9/0mWYuwUZ4PNCA=="
 }

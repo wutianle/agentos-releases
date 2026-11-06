@@ -1,0 +1,67 @@
+{
+  "artifacts": [
+    {
+      "architecture": "arm64",
+      "fileName": "agentos-2.0.0-darwin-arm64.tar.gz",
+      "kind": "core",
+      "platform": "darwin",
+      "sha256": "9ccf2d2d038352503c2d65e4064e6d2ffc6cc2bead60d940705cfb15a351b927",
+      "sizeBytes": 50701678,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-2.0.0-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "x64",
+      "fileName": "agentos-2.0.0-linux-x64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "f37bb4f754f9d2e88b4f344f292569a87a01568f87c38bfbe4abb057cd876913",
+      "sizeBytes": 59755638,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-2.0.0-linux-x64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "fileName": "agentos-2.0.0-linux-arm64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "93c2c860bbdb7dc70a0d068ca73ce2a4bcf02721a1bd95e9c3d8b53dbeb63eb5",
+      "sizeBytes": 59558605,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-2.0.0-linux-arm64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.35",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.35-darwin-arm64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "darwin",
+      "sha256": "09ae5c4c7c90412141a967411701dc6848dd95ac2f69d5a6161c4e869ebca32e",
+      "sizeBytes": 1442113165,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-sandbox-runtime-1.0.0-beta.35-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "x64",
+      "componentVersion": "1.0.0-beta.35",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.35-linux-amd64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "linux",
+      "sha256": "9004eb33ac75f76f0e714692b133e3540661aad94bc870e05e73664bfc4993ce",
+      "sizeBytes": 1425600788,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-sandbox-runtime-1.0.0-beta.35-linux-amd64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "componentVersion": "1.0.0-beta.35",
+      "fileName": "agentos-sandbox-runtime-1.0.0-beta.35-linux-arm64.tar.gz",
+      "kind": "sandbox-runtime",
+      "platform": "linux",
+      "sha256": "89b40a2f748ef01c2d9f8ca56ac227754d61826a6e8bf2364d0f2490e9e42147",
+      "sizeBytes": 1426734041,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.0/agentos-sandbox-runtime-1.0.0-beta.35-linux-arm64.tar.gz"
+    }
+  ],
+  "channel": "stable",
+  "publishedAt": "2026-11-06T05:35:32.322Z",
+  "releaseNotes": "- Establishes the stable 2.0 release line for the AgentOS control plane, web product, SDK and published APIs\n- Replaces the expanded fallback-model button list with a compact selector and a searchable dialog for adding, ordering and removing fallback models; preserves the configured model references and fallback order\n- Separates immutable Runtime component versions from their download release, allowing the verified local Runtime beta.35 and Cube Runtime beta.34 bytes to be distributed with the stable release without rebuilding existing sandbox templates\n- Publishes signed stable and beta update manifests for the same 2.0.0 Core; existing configuration, conversations, workspace files, attachments and Skills remain compatible\n- Keeps build candidates private and limits public releases to explicitly approved beta versions and stable versions; historical beta downloads are withdrawn only after the replacement distribution paths pass acceptance\n- Retains the sandbox recovery, bounded model retry, actual upstream token logging and safe template collection delivered by the preceding beta releases",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.0",
+  "schemaVersion": 1,
+  "version": "2.0.0"
+}

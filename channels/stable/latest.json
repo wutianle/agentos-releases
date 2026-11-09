@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.1-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.2-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "b23e47cc2633bd9b8dfd9e99f8e127ad9d6f70c5a15ccfa8a73dde4da9266574",
-      "sizeBytes": 50707498,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.1/agentos-2.0.1-darwin-arm64.tar.gz"
+      "sha256": "669f83149ee18499efc48b27f1cc235bc196c67a6e500e09401e83055c697ed3",
+      "sizeBytes": 50708747,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.2/agentos-2.0.2-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.1-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.2-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "03f7bb00d248af314108aa5f1e6ab13fac9aa7ae3d78d477c17cc1f313bcb265",
-      "sizeBytes": 59763538,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.1/agentos-2.0.1-linux-x64.tar.gz"
+      "sha256": "edf772b8997679411d35c633c80cf69dadfd60d7021caf48e013cc415e7a9cab",
+      "sizeBytes": 59764414,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.2/agentos-2.0.2-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.1-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.2-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "0273d3284ecacf37717d3a8c62b0e8100692faffaac19251a06849f1b9c1510a",
-      "sizeBytes": 59564566,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.1/agentos-2.0.1-linux-arm64.tar.gz"
+      "sha256": "2f94c1d948e1fae948ae1103ff8bc48d26687441d32d0e8f4d2b3a99ec741476",
+      "sizeBytes": 59565034,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.2/agentos-2.0.2-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-06T11:09:21.653Z",
-  "releaseNotes": "- Allows switching among an Agent version's permitted models between completed turns in the web product and SDK; keeps running turns, approvals and questions on their original model\n- Preserves native conversation history across model changes and compacts with the previous model before moving to a smaller input budget or different protocol; bounds stalled native compaction\n- Adds per-Provider/model reasoning-effort configuration, exposes only declared levels, and preserves explicit upstream defaults through Run admission, Gateway conversion, lease renewal and recovery\n- Recovers signed update-manifest checks through the official GitHub Contents API when the primary download path fails\n- Ships Runtime `1.0.0` with matching Gateway and Codex/OpenCode bridges; preserves configuration, conversations, workspace files, attachments and Skills",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.1",
+  "publishedAt": "2026-11-09T02:51:55.487Z",
+  "releaseNotes": "- Applies the Agent's current available-model policy to new and existing conversations at each new turn; preserves admitted Runs, approvals, questions and historical execution settings\n- Refreshes stale model choices after admission rejection, preserves the message draft and requires an explicit available model instead of silently changing the selection\n- Uses the selected model for native model-switch compaction and abandoned-continuation cleanup without granting a removed model access to new work\n- Generates SDK and web conversation titles with the model selected by the admitted first turn, using declared low or disabled reasoning capabilities without changing the business Run's settings\n- Gives title requests a 2048-token allowance and one bounded 4096-token recovery for exhausted output with no visible title; respects each model's configured output limit\n- Allows a failed title job to recover on a later admitted user turn, preserves durable attempt limits across refresh and restart, and settles interrupted background jobs without repeating model requests\n- Keeps private reasoning and upstream error bodies out of title previews and durable title failure messages\n- Reuses Runtime `1.0.0` and existing sandbox templates; preserves configuration, conversations, workspace files, attachments and Skills",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.2",
   "schemaVersion": 1,
-  "version": "2.0.1"
+  "version": "2.0.2"
 }

@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.3-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.4-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "85f3ec59e07b1b8a9b9b89f36b9f8b8b135e18c740f44b22484d76582a83b63c",
-      "sizeBytes": 50708719,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-2.0.3-darwin-arm64.tar.gz"
+      "sha256": "46b259be9940437f7c101f8ecb43b3463801affe2e3eb870bae722f8d92d9876",
+      "sizeBytes": 50711668,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.4/agentos-2.0.4-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.3-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.4-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "a964cb8e9653be53213ffb83b079f1b01a284aad5703001e9a3bde52966c92ac",
-      "sizeBytes": 59764916,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-2.0.3-linux-x64.tar.gz"
+      "sha256": "b684c8e6990749006c8df015c7da0a6740582c8e7d2d13ff3fdbfbfdec58ac2e",
+      "sizeBytes": 59768209,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.4/agentos-2.0.4-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.3-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.4-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "9d54b7770e49c5b121b53ed80b4ef7c14b7d4e8fff5ae8637bee203ff04d968c",
-      "sizeBytes": 59564978,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-2.0.3-linux-arm64.tar.gz"
+      "sha256": "458f5564a755bad759387c1189135af44e519bae41928a90d9a6a4484a91e334",
+      "sizeBytes": 59567802,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.4/agentos-2.0.4-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-09T05:45:49.285Z",
-  "releaseNotes": "- Adds an optional Java 8 SDK `SendMessageRequest.modelRef` property with fluent and JavaBean accessors, allowing a real message to select an authorized `providerId/modelId`\n- Keeps existing Java callers compatible: omitted or null model references are absent from JSON and continue using the conversation's saved model; response models never become implicit request overrides\n- Verifies omitted and explicit selection, new and existing conversations, remembered model changes, rejected selections and protection of unfinished turns through the external SDK contract\n- Publishes the Java SDK binary, dependency POM and source JAR together with release checksums and documents GitHub download and local Maven installation\n- Reuses Runtime `1.0.0` and existing sandbox templates; preserves configuration, conversations, workspace files, attachments and Skills\n\n### Java 8 SDK\n\n- [agentos-java8-sdk-2.0.3-sources.jar](https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-java8-sdk-2.0.3-sources.jar)\n- [agentos-java8-sdk-2.0.3.jar](https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-java8-sdk-2.0.3.jar)\n- [agentos-java8-sdk-2.0.3.pom](https://github.com/wutianle/agentos-releases/releases/download/v2.0.3/agentos-java8-sdk-2.0.3.pom)\n\nInstall the downloaded binary with its dependency POM and sources:\n\n```sh\nmvn install:install-file -Dfile=agentos-java8-sdk-2.0.3.jar -DpomFile=agentos-java8-sdk-2.0.3.pom -Dsources=agentos-java8-sdk-2.0.3-sources.jar\n```\n\nMaven coordinates: `com.agentos:agentos-java8-sdk:2.0.3`. Omit `modelRef` to keep the saved conversation model; set it explicitly to an authorized `providerId/modelId` for a new turn. Existing external Java applications must update their SDK dependency separately.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.3",
+  "publishedAt": "2026-11-10T12:01:43.895Z",
+  "releaseNotes": "## 2.0.4 - 2026-11-10\n\n- Restores existing conversations when switching models with Codex or OpenCode, including when the native session can no longer resume. Keeps Agent instructions and approvals, and uses authorized models for history recovery.\n- Uses the selected model's configured output budget for the first structured API extraction. If the upstream reports an output-token limit, retries with a larger budget within the available context and upstream limits, without extending the request timeout.\n- Preserves upstream truncation signals even when a Responses model exhausts its budget before returning visible text.\n- Reuses the verified Runtime 1.0.0 and existing sandbox templates. No configuration or conversation migration is required.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.4",
   "schemaVersion": 1,
-  "version": "2.0.3"
+  "version": "2.0.4"
 }

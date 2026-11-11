@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.5-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.6-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "ea39adc79bfd47a637f51432b6ecffdf66b795842c21320452d6299d280b91c7",
-      "sizeBytes": 50715312,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.5/agentos-2.0.5-darwin-arm64.tar.gz"
+      "sha256": "19a2972e4b5122b787497998b493e8a4177be9bb8abf69a0036fb4f3d2288b70",
+      "sizeBytes": 50717041,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.6/agentos-2.0.6-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.5-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.6-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "13c9f5226cd776168084380b6a83f6a27bfa88eb3a89f27f65e3ea70d5d0535f",
-      "sizeBytes": 59770593,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.5/agentos-2.0.5-linux-x64.tar.gz"
+      "sha256": "0eeb8cdb5a2d3f510e96835d589a403ed7f0a5563fa9daee2fd677fca6a60a15",
+      "sizeBytes": 59772192,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.6/agentos-2.0.6-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.5-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.6-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "5aa8e6c8a393c2a447d2d284ce023f8294c1f09be7551880dbd4a45837070834",
-      "sizeBytes": 59568348,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.5/agentos-2.0.5-linux-arm64.tar.gz"
+      "sha256": "1e4a7bdb2a8c9cba47719d890a30cef8e53ce17fc82465c3c017e6a605733fcc",
+      "sizeBytes": 59570676,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.6/agentos-2.0.6-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-11T05:18:22.531Z",
-  "releaseNotes": "## 2.0.5 - 2026-11-11\n\n- Streams published API result extraction on the server. A model that continues producing text or reasoning can finish beyond 60 seconds; connection and inactivity are bounded separately.\n- Retries interrupted extractions without rerunning the business task. A truncated result can retry with a larger token budget; explicitly non-streaming providers use a bounded compatibility request.\n- Delivers a successful callback only after the complete JSON passes the published schema. Reuses Runtime 1.0.0 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.5",
+  "publishedAt": "2026-11-11T11:02:16.713Z",
+  "releaseNotes": "- Retries a transient upstream HTTP 429 on the same model request for Codex, observing Retry-After and cancellation. OpenCode retains its native retry behavior.\n- Deleting a published API task also removes its associated retry conversations, including older attempts with verified ownership. Manual retries retain the task ID.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.6",
   "schemaVersion": 1,
-  "version": "2.0.5"
+  "version": "2.0.6"
 }

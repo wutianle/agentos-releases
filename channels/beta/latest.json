@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.7-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.8-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "bedc705b77db34bb738479278b7dd28997f66c74ba3743dcd391fcc68cc7f0b9",
-      "sizeBytes": 50716384,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.7/agentos-2.0.7-darwin-arm64.tar.gz"
+      "sha256": "b157884d55ea487fe765fa62ce20ae0fa526bf0bb7ae172b0a0366c54ba2f6ff",
+      "sizeBytes": 50717835,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.7-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.8-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "25639ae12c9edf9cd7167bf812bcc8e92f07a1b4b0745d921fa0070a4efd7f13",
-      "sizeBytes": 59772826,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.7/agentos-2.0.7-linux-x64.tar.gz"
+      "sha256": "e0fa38ca83880272b1c3ab0e28f873469d8e05e9d43bff549dad389f541152a7",
+      "sizeBytes": 59773730,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.7-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.8-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "1d62535e7ba15401d499e28c1261bab041ca1d49d1919461664ac24e1e527fd1",
-      "sizeBytes": 59572368,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.7/agentos-2.0.7-linux-arm64.tar.gz"
+      "sha256": "48b603e403b606bba9143dab0f47574738a906093a9e207d4066affac3dcc6e7",
+      "sizeBytes": 59572244,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "beta",
-  "publishedAt": "2026-11-11T12:29:32.673Z",
-  "releaseNotes": "- Keeps Codex and OpenCode bridge connections alive beyond 30 minutes during active Cube runs and while waiting for input. Process startup still has a deadline.\n- Renews the Cube sandbox timeout while a session owns it and through the last session's snapshot. A shared workspace can release an idle attachment while another conversation continues.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.7",
+  "publishedAt": "2026-11-12T01:57:01.821Z",
+  "releaseNotes": "- Published API result extraction increases the output budget on successive truncations, within the remaining context and upstream output limit. A truncated response cannot produce a successful JSON callback.\n- Retrying a structured extraction reuses the completed Agent answer, its original Run, and the task's schema. Recovery also supports existing failed tasks that retain their answer, schema, and Run.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.8",
   "schemaVersion": 1,
-  "version": "2.0.7"
+  "version": "2.0.8"
 }

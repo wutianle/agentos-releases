@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.8-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.9-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "b157884d55ea487fe765fa62ce20ae0fa526bf0bb7ae172b0a0366c54ba2f6ff",
-      "sizeBytes": 50717835,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-darwin-arm64.tar.gz"
+      "sha256": "079b097566c7cc2de610df46d0c8b2b7c6c28f3ce09975b8ee50681b56b82c03",
+      "sizeBytes": 50717937,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.8-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.9-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e0fa38ca83880272b1c3ab0e28f873469d8e05e9d43bff549dad389f541152a7",
-      "sizeBytes": 59773730,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-linux-x64.tar.gz"
+      "sha256": "75676268a3f974dc6a98daa2111e02d413f7c7c22436111a49e5ca8939849a09",
+      "sizeBytes": 59775050,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.8-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.9-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "48b603e403b606bba9143dab0f47574738a906093a9e207d4066affac3dcc6e7",
-      "sizeBytes": 59572244,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.8/agentos-2.0.8-linux-arm64.tar.gz"
+      "sha256": "5fe3de56d46c61246a5a35fc3d4828f5f659082c5c9a79b9b74b0689423bae4d",
+      "sizeBytes": 59573619,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-linux-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-12T01:57:01.269Z",
-  "releaseNotes": "- Published API result extraction increases the output budget on successive truncations, within the remaining context and upstream output limit. A truncated response cannot produce a successful JSON callback.\n- Retrying a structured extraction reuses the completed Agent answer, its original Run, and the task's schema. Recovery also supports existing failed tasks that retain their answer, schema, and Run.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.8",
+  "publishedAt": "2026-11-12T07:14:42.387Z",
+  "releaseNotes": "- Retires each completed conversation's idle Codex or OpenCode bridge after its warm period while other tasks can continue in the same sandbox. Keeps the native conversation identifier for follow-up turns.\n- Includes the 2.0.8 structured JSON recovery: increase output budgets across truncations and reuse the completed Agent answer when retrying extraction.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.9",
   "schemaVersion": 1,
-  "version": "2.0.8"
+  "version": "2.0.9"
 }

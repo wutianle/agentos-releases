@@ -3,15 +3,15 @@
 This repository distributes approved AgentOS installation packages. The product
 source repository remains private.
 
-## Install AgentOS 2.0.9
+## Install AgentOS 2.0.10
 
 ```sh
-curl -fsSL https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/install.sh | sh
+curl -fsSL https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/install.sh | sh
 ```
 
 The installer checks archive size, SHA-256, platform, architecture, and package
 identity. Signed update manifests are available through the stable and beta
-channels; both channels point to the approved 2.0.9 release at its launch.
+channels. The stable channel points to the approved 2.0.10 release.
 
 Target-specific offline bundles are available in the same release. Existing
 configuration, conversations, attachments, and Skills remain outside the
@@ -23,13 +23,10 @@ Only explicitly approved beta versions and formal releases are published here.
 Internal build candidates stay in private staging. Historical beta releases are
 not installation entry points after the formal release migration is completed.
 
-Core `2.0.9` is verified with AgentOS Runtime `1.0.0`, published separately
-in [`runtime-v1.0.0`](https://github.com/wutianle/agentos-releases/releases/tag/runtime-v1.0.0).
-The local sandbox and Cube packages contain the updated Gateway and
-Codex/OpenCode bridges for completed-turn model selection and declared
-reasoning effort. This release reuses those immutable Runtime assets;
-providers prepare their compatible sandbox templates through the normal
-AgentOS Runtime lifecycle. Core and Runtime archives are not duplicated
+Core `2.0.10` is verified with AgentOS Runtime `1.0.1`, published separately
+in [`runtime-v1.0.1`](https://github.com/wutianle/agentos-releases/releases/tag/runtime-v1.0.1).
+The Runtime contains the Gateway and Codex/OpenCode bridges used by this release.
+AgentOS prepares compatible local and Cube templates during the upgrade. Core and Runtime archives are not duplicated
 between their release tags.
 
 Release maintainers may use the existing manual import workflow to transfer

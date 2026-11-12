@@ -2,66 +2,66 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.9-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.10-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "079b097566c7cc2de610df46d0c8b2b7c6c28f3ce09975b8ee50681b56b82c03",
-      "sizeBytes": 50717937,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-darwin-arm64.tar.gz"
+      "sha256": "c80f7e7d6ad20a12c1c6d5fd065cd185e4989ba7d188a32eec6e70bccaa09f18",
+      "sizeBytes": 50731621,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-darwin-arm64.tar.gz"
+    },
+    {
+      "architecture": "arm64",
+      "fileName": "agentos-2.0.10-linux-arm64.tar.gz",
+      "kind": "core",
+      "platform": "linux",
+      "sha256": "a2dd6cfb5dc6545845a73a46605e29a46c6bfa7cc870280093e9aa4fd1cb6256",
+      "sizeBytes": 59587695,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.9-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.10-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "75676268a3f974dc6a98daa2111e02d413f7c7c22436111a49e5ca8939849a09",
-      "sizeBytes": 59775050,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-linux-x64.tar.gz"
+      "sha256": "96f4e26744c299a34a08c757164c9fe2833eb252298528be3e1223824dcc6a85",
+      "sizeBytes": 59782572,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.9-linux-arm64.tar.gz",
-      "kind": "core",
-      "platform": "linux",
-      "sha256": "5fe3de56d46c61246a5a35fc3d4828f5f659082c5c9a79b9b74b0689423bae4d",
-      "sizeBytes": 59573619,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.9/agentos-2.0.9-linux-arm64.tar.gz"
-    },
-    {
-      "architecture": "arm64",
-      "componentVersion": "1.0.0",
-      "fileName": "agentos-sandbox-runtime-1.0.0-darwin-arm64.tar.gz",
+      "componentVersion": "1.0.1",
+      "fileName": "agentos-sandbox-runtime-1.0.1-darwin-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "darwin",
-      "sha256": "3d265315fddc7548ef8125b471a36d529a2ae597c5f67a4d0a74d1a711679f47",
-      "sizeBytes": 1442091245,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0/agentos-sandbox-runtime-1.0.0-darwin-arm64.tar.gz"
+      "sha256": "8bc860e23a8b83ffd5203496141f9c1539a784553144716c2b901136fc9ce065",
+      "sizeBytes": 1442087889,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.1/agentos-sandbox-runtime-1.0.1-darwin-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "componentVersion": "1.0.0",
-      "fileName": "agentos-sandbox-runtime-1.0.0-linux-amd64.tar.gz",
+      "componentVersion": "1.0.1",
+      "fileName": "agentos-sandbox-runtime-1.0.1-linux-amd64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "5c64c046836381e8d655100ce9bf192b6df9d6c18155bcdec22de8e12919773d",
-      "sizeBytes": 1425589440,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0/agentos-sandbox-runtime-1.0.0-linux-amd64.tar.gz"
+      "sha256": "4a0eb7b381d16e1abafd7e0c0937cf80b038175fc7f4392bbfba505f1497baf0",
+      "sizeBytes": 1425592241,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.1/agentos-sandbox-runtime-1.0.1-linux-amd64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "componentVersion": "1.0.0",
-      "fileName": "agentos-sandbox-runtime-1.0.0-linux-arm64.tar.gz",
+      "componentVersion": "1.0.1",
+      "fileName": "agentos-sandbox-runtime-1.0.1-linux-arm64.tar.gz",
       "kind": "sandbox-runtime",
       "platform": "linux",
-      "sha256": "f6bb1d42678710510d49a217f17736781a98450c92fb2f02a26b556a9565991b",
-      "sizeBytes": 1426718003,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.0/agentos-sandbox-runtime-1.0.0-linux-arm64.tar.gz"
+      "sha256": "d8f6f5b41c1d4dd57da6cac6a6d1124fc0d0948c7b566bf285cb2f80e025072b",
+      "sizeBytes": 1426709732,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/runtime-v1.0.1/agentos-sandbox-runtime-1.0.1-linux-arm64.tar.gz"
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-12T07:14:42.387Z",
-  "releaseNotes": "- Retires each completed conversation's idle Codex or OpenCode bridge after its warm period while other tasks can continue in the same sandbox. Keeps the native conversation identifier for follow-up turns.\n- Includes the 2.0.8 structured JSON recovery: increase output budgets across truncations and reuse the completed Agent answer when retrying extraction.\n- Reuses Runtime 1.0.0 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.9",
+  "publishedAt": "2026-11-12T10:25:51.631Z",
+  "releaseNotes": "- Codex and OpenCode can resume an interrupted task in its original conversation. After a native process restart, the bridge checks identifiable workspace files and continues from recorded results. Operations with uncertain external effects are left for review.\n- The model Gateway retries a temporary task authorization renewal failure and can use a still-valid signed lease. Reports renewal outages separately from rejected task authorization and upstream API key errors.\n- Ships Runtime 1.0.1 with the matching native bridges and model Gateway.\n- Restarts a missing sandbox model Gateway during active Codex and OpenCode tasks. Tasks sharing the Gateway resume through their existing connections. If recovery is exhausted, the task ends with a recoverable error. The chat distinguishes reconnecting from sending a new model request.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.10",
   "schemaVersion": 1,
-  "version": "2.0.9"
+  "version": "2.0.10"
 }

@@ -2,11 +2,11 @@
 
 set -eu
 
-DEFAULT_VERSION="2.0.9"
-DEFAULT_SANDBOX_RUNTIME_VERSION="1.0.0"
-DEFAULT_SANDBOX_RUNTIME_TAG="runtime-v1.0.0"
-DEFAULT_SANDBOX_RUNTIME_DIGEST_AMD64="bdf66fd565ed548d66d12afa039daaccf110193d90d2ed1ee7353b46a3fae67f"
-DEFAULT_SANDBOX_RUNTIME_DIGEST_ARM64="152d5ed22fcc591d60c31edb180a59caf2f41daec728dbf227dabecdc44892b0"
+DEFAULT_VERSION="2.0.10"
+DEFAULT_SANDBOX_RUNTIME_VERSION="1.0.1"
+DEFAULT_SANDBOX_RUNTIME_TAG="runtime-v1.0.1"
+DEFAULT_SANDBOX_RUNTIME_DIGEST_AMD64="8ffdc4de664e995983cf58b83908d0e5c28f7fbfd8aea92694400470ea777f1e"
+DEFAULT_SANDBOX_RUNTIME_DIGEST_ARM64="55b8281068f86da1148df131cf613cd117e5424a027c440e99e15831276662ee"
 MINIMUM_LINUX_GLIBC_VERSION="2.28"
 AGENTOS_REPOSITORY="${AGENTOS_REPOSITORY:-wutianle/agentos-releases}"
 AGENTOS_VERSION="${AGENTOS_VERSION:-$DEFAULT_VERSION}"
@@ -57,7 +57,7 @@ Examples:
     --env-file /app/agentos/config/agentos.env --core-only
   curl -fsSL https://example.com/install.sh | sh -s -- --core-only
   ./install.sh --core /path/agentos-2.0.0-darwin-arm64.tar.gz \
-    --runtime /path/agentos-sandbox-runtime-1.0.0-darwin-arm64.tar.gz
+    --runtime /path/agentos-sandbox-runtime-1.0.1-darwin-arm64.tar.gz
   ./install.sh --offline /path/agentos-offline-bundle.tar.gz
 EOF
 }

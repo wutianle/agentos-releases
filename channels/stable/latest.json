@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.10-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.11-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "c80f7e7d6ad20a12c1c6d5fd065cd185e4989ba7d188a32eec6e70bccaa09f18",
-      "sizeBytes": 50731621,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-darwin-arm64.tar.gz"
+      "sha256": "77b7618cc8e7749c13ba59369b9915ef5e37730fa4b2966bef834718b6016919",
+      "sizeBytes": 50731696,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.10-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.11-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "a2dd6cfb5dc6545845a73a46605e29a46c6bfa7cc870280093e9aa4fd1cb6256",
-      "sizeBytes": 59587695,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-linux-arm64.tar.gz"
+      "sha256": "f246a91bb6c816f4084b0899f614cd6fdffa225e5fe29d9acac132106b016eaf",
+      "sizeBytes": 59587639,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.10-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.11-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "96f4e26744c299a34a08c757164c9fe2833eb252298528be3e1223824dcc6a85",
-      "sizeBytes": 59782572,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.10/agentos-2.0.10-linux-x64.tar.gz"
+      "sha256": "ba98a59e3b06cecf5cada524e59a0048d04998c8dfc3ee212d07e5db821cfabb",
+      "sizeBytes": 59780820,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-12T10:25:51.631Z",
-  "releaseNotes": "- Codex and OpenCode can resume an interrupted task in its original conversation. After a native process restart, the bridge checks identifiable workspace files and continues from recorded results. Operations with uncertain external effects are left for review.\n- The model Gateway retries a temporary task authorization renewal failure and can use a still-valid signed lease. Reports renewal outages separately from rejected task authorization and upstream API key errors.\n- Ships Runtime 1.0.1 with the matching native bridges and model Gateway.\n- Restarts a missing sandbox model Gateway during active Codex and OpenCode tasks. Tasks sharing the Gateway resume through their existing connections. If recovery is exhausted, the task ends with a recoverable error. The chat distinguishes reconnecting from sending a new model request.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.10",
+  "publishedAt": "2026-11-16T01:41:30.432Z",
+  "releaseNotes": "- Codex model requests that receive a temporary HTTP 429 can retry up to five times. The broker waits 15 seconds by default or follows the upstream Retry-After header, with at most 90 seconds of cumulative waiting per request. A successful retry continues the current task.\n- Reuses Runtime 1.0.1 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.11",
   "schemaVersion": 1,
-  "version": "2.0.10"
+  "version": "2.0.11"
 }

@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.11-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.12-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "77b7618cc8e7749c13ba59369b9915ef5e37730fa4b2966bef834718b6016919",
-      "sizeBytes": 50731696,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-darwin-arm64.tar.gz"
+      "sha256": "6d7747a12a923cd98cff562b7120a2d98e38b7829599ac67dfed79e454029450",
+      "sizeBytes": 50732179,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.11-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.12-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "f246a91bb6c816f4084b0899f614cd6fdffa225e5fe29d9acac132106b016eaf",
-      "sizeBytes": 59587639,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-linux-arm64.tar.gz"
+      "sha256": "e9af145ae5de1d977ab23cb9ae5818cfa38d21d4f49d0dafbb2abb9d7032afc0",
+      "sizeBytes": 59587927,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.11-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.12-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "ba98a59e3b06cecf5cada524e59a0048d04998c8dfc3ee212d07e5db821cfabb",
-      "sizeBytes": 59780820,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.11/agentos-2.0.11-linux-x64.tar.gz"
+      "sha256": "7ecdb4aed24033b345fab99be2f8bc5199157e029ab166a8c797c8458bd2a696",
+      "sizeBytes": 59781636,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-16T01:41:30.432Z",
-  "releaseNotes": "- Codex model requests that receive a temporary HTTP 429 can retry up to five times. The broker waits 15 seconds by default or follows the upstream Retry-After header, with at most 90 seconds of cumulative waiting per request. A successful retry continues the current task.\n- Reuses Runtime 1.0.1 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.11",
+  "publishedAt": "2026-11-16T03:17:38.490Z",
+  "releaseNotes": "- Codex and OpenCode can compact and continue the same task when a later request exceeds the upload or context limit after new work has completed. Long document tasks can recover again as they read additional pages.\n- Consecutive recovery attempts on the same stalled step remain bounded. Resuming after an interruption or an approval preserves the recovery history.\n- Reuses Runtime 1.0.1 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.12",
   "schemaVersion": 1,
-  "version": "2.0.11"
+  "version": "2.0.12"
 }

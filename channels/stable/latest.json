@@ -2,30 +2,30 @@
   "artifacts": [
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.12-darwin-arm64.tar.gz",
+      "fileName": "agentos-2.0.13-darwin-arm64.tar.gz",
       "kind": "core",
       "platform": "darwin",
-      "sha256": "6d7747a12a923cd98cff562b7120a2d98e38b7829599ac67dfed79e454029450",
-      "sizeBytes": 50732179,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-darwin-arm64.tar.gz"
+      "sha256": "0824815ae681cd098ebc13fcf3649efb56ee42e1d8771d9bb22f924d89cfe1f2",
+      "sizeBytes": 50732451,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.13/agentos-2.0.13-darwin-arm64.tar.gz"
     },
     {
       "architecture": "arm64",
-      "fileName": "agentos-2.0.12-linux-arm64.tar.gz",
+      "fileName": "agentos-2.0.13-linux-arm64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "e9af145ae5de1d977ab23cb9ae5818cfa38d21d4f49d0dafbb2abb9d7032afc0",
-      "sizeBytes": 59587927,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-linux-arm64.tar.gz"
+      "sha256": "d5e50f10873047fcde2bd7e05c5eb4e3c1c681b9cdfc3b37aa8af89fbe8c9a21",
+      "sizeBytes": 59588275,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.13/agentos-2.0.13-linux-arm64.tar.gz"
     },
     {
       "architecture": "x64",
-      "fileName": "agentos-2.0.12-linux-x64.tar.gz",
+      "fileName": "agentos-2.0.13-linux-x64.tar.gz",
       "kind": "core",
       "platform": "linux",
-      "sha256": "7ecdb4aed24033b345fab99be2f8bc5199157e029ab166a8c797c8458bd2a696",
-      "sizeBytes": 59781636,
-      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.12/agentos-2.0.12-linux-x64.tar.gz"
+      "sha256": "d7cfc3ecd69e36cde65abefe84ae0fecc91e6c8d9400b768621f02680be3c95f",
+      "sizeBytes": 59783251,
+      "url": "https://github.com/wutianle/agentos-releases/releases/download/v2.0.13/agentos-2.0.13-linux-x64.tar.gz"
     },
     {
       "architecture": "arm64",
@@ -59,9 +59,9 @@
     }
   ],
   "channel": "stable",
-  "publishedAt": "2026-11-16T03:17:38.490Z",
-  "releaseNotes": "- Codex and OpenCode can compact and continue the same task when a later request exceeds the upload or context limit after new work has completed. Long document tasks can recover again as they read additional pages.\n- Consecutive recovery attempts on the same stalled step remain bounded. Resuming after an interruption or an approval preserves the recovery history.\n- Reuses Runtime 1.0.1 and existing sandbox templates.",
-  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.12",
+  "publishedAt": "2026-11-18T07:28:39.520Z",
+  "releaseNotes": "- Conversation SDK tool events include complete tool inputs and outputs when supplied by the Harness. Live streams, replay, and saved history expose the same fields. Existing summary fields remain available.\n- Failed tool calls in the AgentOS chat use the same neutral colors as successful calls. Details start collapsed and can be opened to inspect the error and any reported exit code.\n- Reuses Runtime 1.0.1 and existing sandbox templates.",
+  "releaseUrl": "https://github.com/wutianle/agentos-releases/releases/tag/v2.0.13",
   "schemaVersion": 1,
-  "version": "2.0.12"
+  "version": "2.0.13"
 }
